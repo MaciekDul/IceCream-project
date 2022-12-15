@@ -27,4 +27,15 @@
   background-image: url("../images/demo.jpg");
   background-size: cover;
   background-position: center;
+}
+
+:root {
+  --pink-color: #ffb8ca;
+  --menu-color: #ffb8ca;
+  --text: #ffa5ba;
+  --text-color: #000000;
+  --secondary-text-color: #907e82;
+  --white-color: #ffffff;
+  --red-color: #d41443;
+  --background-pink-color: #fff5f6;
 }/*# sourceMappingURL=main.css.map */
