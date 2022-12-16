@@ -31,8 +31,9 @@ button {
     display: flex;
     justify-content: baseline;
     align-items: center;
-    background: #ffb8ca;
+    background:var(--menu-color);
     padding-top: 8px;
+   
 }
 
 .container {
