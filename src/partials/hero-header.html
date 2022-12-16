@@ -1,0 +1,48 @@
+<!-- start header , logo , button mobile and navigation links-->
+<header class="header">
+
+    <div class="container">
+
+        <a href="#" class="header__logo link">
+            <img src="logo" width="199px" height="50" alt="logo ice cream">
+            </img>
+        </a>
+        <nav class="nav">
+            <ul class="list nav__list">
+                <li class="nav__item">
+                    <a href="" class="current link nav__link">Home</a>
+                </li>
+
+                <!-- konieczne dodanie kotwic do sekcji zgodnie z instrukcją "Menu jest zaimplementowane za pomocą linków kotwiczących, które prowadzą do odpowiednich sekcji układu.
+"-->
+                <li class="nav__item">
+                    <a href="#advantages" class="nav__link">About us</a>
+                </li>
+                <li class="nav__item">
+                    <a href="#about" class="nav__link">How it’s made?</a>
+                </li>
+                <li class="nav__item">
+                    <a href="#products" class="nav__link">Our products</a>
+                </li>
+                <li class="nav__item">
+                    <a href="#contacts" class="nav__link">Contact</a>
+                </li>
+            </ul>
+            <div class="header__wrap">
+                <button type="button" class="menu-open-btn" data-menu-button="">
+                    <svg class="menu-icon" width="20" height="20">
+                        <use href="./images/sprite.svg#icon-burger"></use>
+                    </svg>
+                </button>
+                <button type="button" class="nav__btn" data-modal-open="">
+                    Buy now
+                    <svg class="nav__icon" width="10" height="10">
+                        <use href="../images/sprite.svg#icon-arrow-right"></use>
+                    </svg>
+                </button>
+            </div>
+        </nav>
+    </div>
+</header>
+
+<!-- end of header , logo , button mobile and navigation links-->
