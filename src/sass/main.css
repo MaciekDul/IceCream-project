@@ -134,6 +134,147 @@
     letter-spacing: 0.02em;
   }
 }
+a {
+  color: inherit;
+}
+
+.contacts__hidden {
+  visibility: hidden;
+}
+.contacts__container {
+  width: 100vw;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  font-weight: 500;
+  font-size: 12px;
+  line-height: 1.5;
+  margin-top: 86px;
+  margin-bottom: 32px;
+}
+.contacts__form {
+  width: 220px;
+  box-shadow: 0px 8px 30px rgba(212, 20, 67, 0.1);
+  border-radius: 24px;
+  padding: 43px 20px 43px 20px;
+  margin-bottom: 20px;
+  background-color: var(--white-color);
+}
+.contacts__form > .contacts__fieldset {
+  border-bottom: 1px solid #e1e1e1;
+  width: 90%;
+  padding-bottom: 25px;
+}
+.contacts__form > .contacts__fieldset:last-child {
+  border-bottom: none;
+  padding-bottom: 0px;
+}
+.contacts__fieldset {
+  border-style: none;
+  padding-top: 25px;
+  width: 100%;
+}
+.contacts__label {
+  line-height: 1.86;
+  width: 100vw;
+  color: black;
+}
+.contacts__block {
+  padding: 2px 15px 2px 15px;
+  margin-left: 9px;
+  width: -webkit-min-content;
+  width: -moz-min-content;
+  width: min-content;
+  white-space: nowrap;
+  border-radius: 4px;
+  color: var(--white-color);
+  text-align: center;
+  align-content: center;
+}
+.contacts__cafe {
+  background-color: #f0d1a5;
+}
+.contacts__food-truck {
+  background-color: #c2e297;
+}
+.contacts__opening-hours {
+  color: #ffa5ba;
+  line-height: 1.86;
+  margin-bottom: 10px;
+  margin-top: 3px;
+}
+.contacts__locations-btn {
+  background-color: var(--red-color);
+  border-radius: 22px;
+  color: var(--white-color);
+  margin-bottom: 10px;
+  border-style: none;
+  width: 160px;
+  height: 44px;
+  font-weight: 700;
+  line-height: 1.3;
+}
+.contacts__franchise-btn {
+  border-style: none;
+  white-space: nowrap;
+  color: var(--red-color);
+  border-radius: 22px;
+  width: 160px;
+  height: 44px;
+  font-weight: 700;
+  line-height: 1.3;
+}
+.contacts__btn {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+@media (min-width: 768px) {
+  .contacts__container {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+  }
+  .contacts__btn {
+    flex-direction: row;
+    justify-content: space-between;
+    text-align: center;
+    width: 380px;
+    margin: auto;
+  }
+  .contacts__locations-btn {
+    margin-bottom: 0;
+    width: 191px;
+  }
+  .contacts__franchise-btn {
+    width: 174px;
+  }
+}
+@media (min-width: 1200px) {
+  .contacts__form {
+    width: 330px;
+    height: 572px;
+    font-size: 16px;
+    margin-bottom: 32px;
+  }
+  .contacts__block {
+    margin-bottom: 32px;
+  }
+  .contactsopening-overs {
+    margin-bottom: 15px;
+  }
+  .contacts__btn {
+    width: 393px;
+  }
+  .contacts__locations-btn {
+    margin-bottom: 0;
+    width: 198px;
+  }
+  .contacts__franchise-btn {
+    width: 180px;
+  }
+}
 h1,
 h2,
 h3,
@@ -308,6 +449,151 @@ button {
   }
 }
 
+.products__container {
+  box-sizing: border-box;
+  padding: 0 15px;
+  min-width: 320px;
+  max-width: 1170px;
+  margin: 0 auto;
+  align-items: center;
+}
+@media screen and (min-width: 480px) {
+  .products__container {
+    width: 480px;
+  }
+}
+@media screen and (min-width: 768px) {
+  .products__container {
+    width: 768px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .products__container {
+    width: 1200px;
+  }
+}
+
+.products__text {
+  color: var(--white-color);
+  text-align: center;
+  font-weight: 700;
+  size: 14px;
+  font: DM Sans;
+  margin-top: 30px;
+  padding: 0 30px 0;
+}
+
+.products__img {
+  width: 100%;
+  height: auto;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+.products__card {
+  position: relative;
+  bottom: 122px;
+}
+
+.card__header {
+  font-size: 14px;
+  margin-bottom: 10px;
+  line-height: 1.17;
+  color: var(--menu-color);
+}
+
+.products__header {
+  display: grid;
+  padding-top: 20px;
+  font-size: 20px;
+  font-family: Titan One;
+  color: var(--white-color);
+  text-align: center;
+}
+.products__header::after {
+  font-size: 18px;
+  content: "\a...";
+  white-space: pre;
+}
+
+.products__header-small {
+  text-align: center;
+  margin-top: 15px;
+  font-family: Titan One;
+  color: var(--menu-color);
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 1.145;
+}
+
+.products__header-big {
+  text-align: center;
+  margin-top: 15px;
+  font-weight: 400;
+  font-size: 34px;
+  line-height: 1.145;
+  padding-bottom: 122px;
+  margin-bottom: 15px;
+  font-family: Titan One;
+  text-transform: uppercase;
+  color: var(--red-color);
+}
+
+.products__cards {
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  row-gap: 130px;
+}
+
+.products__arrow {
+  padding: 30px 120px 15px 120px;
+  align-items: center;
+}
+
+.card {
+  width: 280px;
+  height: 485px;
+  border-radius: 24px;
+}
+
+.card--pink {
+  background-color: var(--menu-color);
+}
+
+.card--brown {
+  background-color: #f0d1a5;
+}
+
+.card--green {
+  background-color: #c2e297;
+}
+
+@media screen and (min-width: 768px) and (max-width: 1199px) {
+  .products__cards {
+    display: flex;
+    flex-direction: unset;
+    flex-wrap: wrap;
+    gap: 30px;
+  }
+  .card {
+    max-width: 354px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .products__cards {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+  }
+  .card {
+    max-width: 270px;
+  }
+  .card:not(:first-child) {
+    margin-left: 30px;
+  }
+}
 :root {
   --pink-color: #ffb8ca;
   --menu-color: #ffb8ca;
