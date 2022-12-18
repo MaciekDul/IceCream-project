@@ -58,6 +58,7 @@
 
 // footer- social media// 
 
+
 .footer-socialmedia{
     display: flex;
     justify-content: flex-end;
@@ -75,4 +76,18 @@
     border-radius: 50%;
     margin-bottom: 46px;
 
+}
+.footer-infotel{
+    display: flex;
+    flex-direction: column;
+}
+
+@media screen and (min-width: 480px){
+    .footer-container{
+        display: flex;
+        flex-direction: row;
+    }
+    .footer-title-small{
+        margin: 0;
+    }
 }
