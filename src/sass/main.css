@@ -29,6 +29,78 @@
   background-position: center;
 }
 
+.about {
+  padding-inline: 20px;
+  padding-top: 125px;
+  width: 100%;
+  background-color: var(--background-pink-color);
+  display: flex;
+  flex-direction: column;
+}
+
+.about__subtitle {
+  font-family: "Titan One";
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 1.17;
+  text-align: center;
+  text-transform: uppercase;
+  color: var(--text);
+  margin-bottom: 15px;
+}
+
+.about__title {
+  font-family: "Titan One";
+  font-weight: 400;
+  font-size: 34px;
+  line-height: 1.15;
+  text-align: center;
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
+  color: var(--red-color);
+  margin-left: 39px;
+  margin-right: 41px;
+  margin-bottom: 26px;
+}
+
+.about__images {
+  width: calc(100vw - 40px);
+  margin-bottom: 46px;
+}
+
+.about__description {
+  font-family: "DM Sans";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 12px;
+  line-height: 1.58;
+  color: #000000;
+  display: block;
+  margin-inline: 30px;
+  margin-bottom: 47px;
+}
+
+.about__depiction {
+  font-family: "DM Sans";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 12px;
+  line-height: 1.58;
+  color: var(--secondary-text-color);
+  display: flex;
+  flex-direction: column;
+  gap: 17px;
+  margin-inline: 30px;
+  margin-bottom: 17px;
+}
+
+.about__button {
+  background-color: #FFFFFF;
+  border-radius: 22px;
+  border: none;
+  margin-bottom: 39px;
+}
+
 h1,
 h2,
 h3,
