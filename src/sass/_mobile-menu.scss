@@ -83,6 +83,23 @@
   height: 14px;
 }
 
+@media screen and (min-width: 768px) {
+  .mobile__menu-container {
+    width: 254px;
+    height: 1020px;
+    transform: translateX(305%);
+  }
+
+  .mobile__menu-container.is-open {
+    transform: translateX(205%);
+  }
+
+  .nav__btn-mobile {
+    width: 186px;
+    margin-left: 34px;
+  }
+}
+
 @media screen and (min-width: 1200px) {
   .mobile__menu-container {
     display: none;
