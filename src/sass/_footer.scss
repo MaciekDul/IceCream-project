@@ -81,13 +81,24 @@
     display: flex;
     flex-direction: column;
 }
+.footer-end{
+    display: flex;
+    flex-wrap: wrap;
+    border-top: 100vh;
+   border-top: 1px solid #E1E1E1;
+   margin: 0;
+   
+}
 
 @media screen and (min-width: 480px){
     .footer-container{
         display: flex;
         flex-direction: row;
     }
-    .footer-title-small{
+    .footer-title-small, 
+    .footer-socialmedia,
+    .footer-title{
         margin: 0;
     }
+  
 }
