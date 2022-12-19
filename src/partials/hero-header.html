@@ -29,7 +29,11 @@
                 </li>
             </ul>
             <div class="header__wrap">
-                <button type="button" class="menu-open-btn" data-menu-button="">
+                <button
+          class="menu-toggle js-open-menu menu-open-btn"
+          aria-expanded="false"
+          aria-controls="mobile-menu"
+        >
                     <svg class="menu-icon" width="20" height="20">
                         <use href="./images/sprite.svg#icon-burger"></use>
                     </svg>
@@ -44,5 +48,6 @@
         </nav>
     </div>
 </header>
+
 
 <!-- end of header , logo , button mobile and navigation links-->
