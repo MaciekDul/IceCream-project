@@ -334,29 +334,66 @@ text-align: right;
     .footer-infotel{
         margin: 0;
     }
-  
-.footer-title{
-    margin-left: 20px;
-}
+    
+    .footer-title{
+        margin-left: 20px;
+        display: flex;
+        margin-top: 165px;
+    }
 
-.footer-title-small{
-    font-size: 26px;
-    font-weight: 400;
-}
+    .footer-title-small{
+        font-size: 26px;
+        font-weight: 400;
+        line-height: 30px;
+        letter-spacing: 0.04em;
+        margin-bottom: 16px;
+        min-width: 340px;
+        
 
-.footer-title-big{
-    font-size: 48px;
-    font-weight: 400;
-}
-.footer-infotel{
-    margin-right: 20px;
+    }
 
-}
+    .footer-title-big{
+        font-size: 48px;
+        font-weight: 400;
+        line-height: 55px;
+        letter-spacing: 0.06em;
+        min-width: 340px;
+        
+    }
+    .footer-infotel{
+        margin-right: 20px;
+        margin-top: 158px;
+        align-items: flex-end;
 
-.footer-top{
-    display: flex;
-    flex-direction: row;
-}
 
+    }
 
+    .footer-top{
+        display: flex;
+        flex-direction: row;
+        margin:0;
+        justify-content: space-between;
+    }
+
+    .footer-contact{
+        font-size: 14px;
+        font-weight: 700;
+        color: #000000;
+    }
+
+    .footer-end{
+        width: 100vw;
+        display: flex;
+        flex-wrap: nowrap;
+        
+    }
+
+    .footer-end__text{
+        width: 100vw;
+        display: flex;
+        min-width: 276px;
+        font-size: 14px;
+        letter-spacing: 0.02em;
+
+    }
 }
