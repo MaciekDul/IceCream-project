@@ -134,10 +134,6 @@
     letter-spacing: 0.02em;
   }
 }
-a {
-  color: inherit;
-}
-
 .contacts__hidden {
   visibility: hidden;
 }
@@ -161,7 +157,7 @@ a {
   background-color: var(--white-color);
 }
 .contacts__form > .contacts__fieldset {
-  border-bottom: 1px solid #e1e1e1;
+  border-bottom: 1px solid var(--border-color);
   width: 90%;
   padding-bottom: 25px;
 }
@@ -177,7 +173,7 @@ a {
 .contacts__label {
   line-height: 1.86;
   width: 100vw;
-  color: black;
+  color: var(--text-color);
 }
 .contacts__block {
   padding: 2px 15px 2px 15px;
@@ -192,13 +188,13 @@ a {
   align-content: center;
 }
 .contacts__cafe {
-  background-color: #f0d1a5;
+  background-color: var(--contacts-color-background-cafe);
 }
 .contacts__food-truck {
-  background-color: #c2e297;
+  background-color: var(--contacts-color-background-food-truck);
 }
 .contacts__opening-hours {
-  color: #ffa5ba;
+  color: var(--text);
   line-height: 1.86;
   margin-bottom: 10px;
   margin-top: 3px;
