@@ -24,7 +24,7 @@
     background-color: var(--white-color);
   }
   &__form > &__fieldset {
-    border-bottom: 1px solid var(--border-color);
+    border-bottom: 1px solid var(--gray-color);
     width: 90%;
     padding-bottom: 25px;
   }
@@ -54,10 +54,10 @@
     align-content: center;
   }
   &__cafe {
-    background-color: var(--contacts-color-background-cafe);
+    background-color: var(--orange-color);
   }
   &__food-truck {
-    background-color: var(--contacts-color-background-food-truck);
+    background-color: var(--green-color);
   }
   &__opening-hours {
     color: var(--text);
