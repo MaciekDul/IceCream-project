@@ -37,7 +37,6 @@
   display: flex;
   flex-direction: column;
 }
-
 .about__subtitle {
   font-family: "Titan One";
   font-weight: 400;
@@ -48,7 +47,6 @@
   color: var(--text);
   margin-bottom: 15px;
 }
-
 .about__title {
   font-family: "Titan One";
   font-weight: 400;
@@ -62,12 +60,10 @@
   margin-right: 41px;
   margin-bottom: 26px;
 }
-
 .about__images {
   width: calc(100vw - 40px);
   margin-bottom: 46px;
 }
-
 .about__description {
   font-family: "DM Sans";
   font-style: normal;
@@ -79,7 +75,6 @@
   margin-inline: 30px;
   margin-bottom: 47px;
 }
-
 .about__depiction {
   font-family: "DM Sans";
   font-style: normal;
@@ -92,9 +87,7 @@
   gap: 17px;
   margin-inline: 30px;
   margin-bottom: 17px;
-  background-image: url("./images/making/milk");
 }
-
 .about__button {
   background-color: #FFFFFF;
   border-radius: 22px;
@@ -119,13 +112,65 @@
 .about__button:focus, .about__button:hover {
   background: #ECEBEB;
 }
-
 .about__icon {
   fill: black;
   width: 8px;
   height: 4px;
 }
 
+@media screen and (min-widith: 768px) {
+  about {
+    padding-left: 39px;
+    padding-right: 36px;
+    padding-top: 130px;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+  }
+  about__subtitle {
+    font-size: 26px;
+    line-height: 1.15;
+    margin-bottom: 16px;
+  }
+  about__title {
+    font-size: 48px;
+    margin-left: 172px;
+    margin-right: 171px;
+    margin-bottom: 50px;
+  }
+  about__images {
+    width: calc((100vw - 75px) / 2);
+    margin-bottom: 56px;
+    margin-right: 17px;
+  }
+  about__description {
+    font-size: 14px;
+    line-height: 1.79;
+    margin-bottom: 47px;
+  }
+  about__depiction {
+    font-size: 14px;
+    line-height: 1.79;
+    margin-inline: 0px;
+    margin-bottom: 62px;
+  }
+  about__button {
+    border-radius: 22px;
+    margin-bottom: 66px;
+    font-size: 16px;
+    line-height: 1.3;
+    color: var(--red-color);
+    margin-left: 357px;
+    margin-right: 164px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .about {
+    padding-left: 112px;
+    padding-right: 117px;
+    padding-top: 125px;
+  }
+}
 h1,
 h2,
 h3,

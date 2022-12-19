@@ -6,9 +6,7 @@
 display:flex;
 flex-direction: column;
 
-}
-
-.about__subtitle{    
+&__subtitle{    
 font-family: 'Titan One';
 font-weight: 400;
 font-size: 18px;
@@ -19,7 +17,7 @@ color: var(--text);
 margin-bottom:15px;
 }
 
-.about__title{
+&__title{
 font-family: 'Titan One';
 font-weight: 400;
 font-size: 34px;
@@ -33,11 +31,11 @@ margin-right: 41px;
 margin-bottom: 26px;
 }
 
-.about__images{
+&__images{
     width:calc(100vw - 40px);
     margin-bottom: 46px;
 }
-.about__description{
+&__description{
 font-family: 'DM Sans';
 font-style: normal;
 font-weight: 500;
@@ -48,7 +46,7 @@ display:block;
 margin-inline: 30px;
 margin-bottom: 47px;
 }
-.about__depiction{
+&__depiction{
 font-family: 'DM Sans';
 font-style: normal;
 font-weight: 500;
@@ -60,11 +58,9 @@ flex-direction: column;
 gap:17px;
 margin-inline:30px;
 margin-bottom: 17px;
-background-image: url("./images/making/milk");
-
 }
 
-.about__button{
+&__button{
 background-color: #FFFFFF;
 border-radius: 22px;
 border:none;
@@ -91,9 +87,67 @@ box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
     }
 }
 
-.about__icon{
+&__icon{
     fill:black;
     width:8px;
     height:4px;
     
+}}
+
+@media screen and (min-widith:768px){
+  about{
+    padding-left:39px;
+    padding-right:36px;
+    padding-top:130px;
+    display:flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+
+   &__subtitle{    
+  font-size: 26px;
+  line-height: 1.15;
+  margin-bottom:16px;
+  }
+
+  &__title{
+font-size: 48px;
+margin-left:172px;
+margin-right: 171px;
+margin-bottom: 50px;
+}
+&__images{
+    width:calc( (100vw - 75px) / 2);
+    margin-bottom: 56px;
+    margin-right: 17px;
+}
+&__description{
+font-size: 14px;
+line-height: 1.79;
+margin-bottom: 47px;
+}
+&__depiction{
+font-size: 14px;
+line-height: 1.79;
+margin-inline:0px;
+margin-bottom: 62px;
+}
+&__button{
+border-radius: 22px;
+margin-bottom: 66px;
+font-size: 16px;
+line-height: 1.3;
+color: var(--red-color);
+margin-left:357px;
+margin-right:164px;
+}
+  }
+}
+
+@media screen and (min-width:1200px) {
+  .about{
+    padding-left: 112px;
+    padding-right: 117px;
+    padding-top:125px;
+
+  }
 }
