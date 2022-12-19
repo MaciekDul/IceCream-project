@@ -3,35 +3,11 @@
  * Główny plik dla stylów.
  * Wszystkie partials podłączamy tutaj.
  */
-.example {
-  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
-  line-height: 1.5;
-  background-color: #fff;
-  color: #424242;
-  max-width: 960px;
-  padding: 16px;
-}
-
-.example code {
-  font-family: monospace;
-  font-size: 16px;
-  font-weight: 700;
-  background-color: #009688;
-  color: #fff;
-  padding: 2px 6px;
-  border-radius: 2px;
-}
-
-.example .background {
-  height: 240px;
-  background-image: url("../images/demo.jpg");
-  background-size: cover;
-  background-position: center;
-}
 
 .container-advantages {
   margin-left: auto;
   margin-right: auto;
+  background-color: var(--background-pink-color);
 }
 
 @media screen and (max-width: 767px) {
@@ -134,10 +110,6 @@
     letter-spacing: 0.02em;
   }
 }
-a {
-  color: inherit;
-}
-
 .contacts__hidden {
   visibility: hidden;
 }
@@ -161,7 +133,7 @@ a {
   background-color: var(--white-color);
 }
 .contacts__form > .contacts__fieldset {
-  border-bottom: 1px solid #e1e1e1;
+  border-bottom: 1px solid var(--border-color);
   width: 90%;
   padding-bottom: 25px;
 }
@@ -177,7 +149,7 @@ a {
 .contacts__label {
   line-height: 1.86;
   width: 100vw;
-  color: black;
+  color: var(--text-color);
 }
 .contacts__block {
   padding: 2px 15px 2px 15px;
@@ -192,13 +164,13 @@ a {
   align-content: center;
 }
 .contacts__cafe {
-  background-color: #f0d1a5;
+  background-color: var(--contacts-color-background-cafe);
 }
 .contacts__food-truck {
-  background-color: #c2e297;
+  background-color: var(--contacts-color-background-food-truck);
 }
 .contacts__opening-hours {
-  color: #ffa5ba;
+  color: var(--text);
   line-height: 1.86;
   margin-bottom: 10px;
   margin-top: 3px;
@@ -406,7 +378,8 @@ button {
     border-radius: 22px;
     transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
   }
-  .nav__btn:focus, .nav__btn:hover {
+  .nav__btn:focus,
+  .nav__btn:hover {
     background: #ecebeb;
   }
 }
@@ -426,7 +399,8 @@ button {
     border-radius: 22px;
     transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
   }
-  .nav__btn:focus, .nav__btn:hover {
+  .nav__btn:focus,
+  .nav__btn:hover {
     background: #ecebeb;
   }
 }
@@ -759,7 +733,7 @@ button {
   width: 100%;
   height: auto;
   -o-object-fit: cover;
-     object-fit: cover;
+  object-fit: cover;
 }
 
 .products__card {
@@ -784,7 +758,7 @@ button {
 }
 .products__header::after {
   font-size: 18px;
-  content: "\a...";
+  content: '\a...';
   white-space: pre;
 }
 
@@ -880,7 +854,7 @@ button {
 body {
   background-color: #ffffff;
   color: #757575;
-  font-family: "DM Sans", sans-serif;
+  font-family: 'DM Sans', sans-serif;
   font-weight: 400;
   font-size: 16px;
 }
@@ -923,7 +897,8 @@ input {
   width: 250px;
   height: 502px;
   background: #e17992;
-  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.04), 0px 2px 4px rgba(0, 0, 0, 0.08), 0px 1px 3px rgba(0, 0, 0, 0.16);
+  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.04), 0px 2px 4px rgba(0, 0, 0, 0.08),
+    0px 1px 3px rgba(0, 0, 0, 0.16);
   transform: translateX(150%);
   transition: transform 250ms ease-in-out;
   z-index: 5;
@@ -986,7 +961,8 @@ input {
   border-radius: 22px;
   transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
-.nav__btn-mobile:focus, .nav__btn-mobile:hover {
+.nav__btn-mobile:focus,
+.nav__btn-mobile:hover {
   background: #ecebeb;
 }
 
@@ -1013,4 +989,4 @@ input {
   .mobile__menu-container {
     display: none;
   }
-}/*# sourceMappingURL=main.css.map */
+} /*# sourceMappingURL=main.css.map */
