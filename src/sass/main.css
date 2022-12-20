@@ -3,7 +3,174 @@
  * Główny plik dla stylów.
  * Wszystkie partials podłączamy tutaj.
  */
+.example {
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+  line-height: 1.5;
+  background-color: #fff;
+  color: #424242;
+  max-width: 960px;
+  padding: 16px;
+}
 
+.example code {
+  font-family: monospace;
+  font-size: 16px;
+  font-weight: 700;
+  background-color: #009688;
+  color: #fff;
+  padding: 2px 6px;
+  border-radius: 2px;
+}
+
+.example .background {
+  height: 240px;
+  background-image: url("../images/demo.jpg");
+  background-size: cover;
+  background-position: center;
+}
+
+.about {
+  padding-inline: 20px;
+  padding-top: 125px;
+  width: 100%;
+  background-color: var(--background-pink-color);
+  display: flex;
+  flex-direction: column;
+}
+.about__subtitle {
+  font-family: "Titan One";
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 1.17;
+  text-align: center;
+  text-transform: uppercase;
+  color: var(--text);
+  margin-bottom: 15px;
+}
+.about__title {
+  font-family: "Titan One";
+  font-weight: 400;
+  font-size: 34px;
+  line-height: 1.15;
+  text-align: center;
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
+  color: var(--red-color);
+  margin-left: 39px;
+  margin-right: 41px;
+  margin-bottom: 26px;
+}
+.about__images {
+  width: calc(100vw - 40px);
+  margin-bottom: 46px;
+}
+.about__description {
+  font-family: "DM Sans";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 12px;
+  line-height: 1.58;
+  color: #000000;
+  display: block;
+  margin-inline: 30px;
+  margin-bottom: 47px;
+}
+.about__depiction {
+  font-family: "DM Sans";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 12px;
+  line-height: 1.58;
+  color: var(--secondary-text-color);
+  display: flex;
+  flex-direction: column;
+  gap: 17px;
+  margin-inline: 30px;
+  margin-bottom: 17px;
+}
+.about__button {
+  background-color: #FFFFFF;
+  border-radius: 22px;
+  border: none;
+  margin-bottom: 39px;
+  font-family: "DM Sans";
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 1.29;
+  display: inline-block;
+  align-items: center;
+  text-align: center;
+  justify-content: center;
+  gap: 10px;
+  color: var(--red-color);
+  margin-left: 30px;
+  margin-right: 74px;
+  padding-block: 15px;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+.about__button:focus, .about__button:hover {
+  background: #ECEBEB;
+}
+.about__icon {
+  fill: black;
+  width: 8px;
+  height: 4px;
+}
+
+@media screen and (min-widith: 768px) {
+  about {
+    padding-left: 39px;
+    padding-right: 36px;
+    padding-top: 130px;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+  }
+  about__subtitle {
+    font-size: 26px;
+    line-height: 1.15;
+    margin-bottom: 16px;
+  }
+  about__title {
+    font-size: 48px;
+    margin-left: 172px;
+    margin-right: 171px;
+    margin-bottom: 50px;
+  }
+  about__images {
+    width: calc((100vw - 75px) / 2);
+    margin-bottom: 56px;
+    margin-right: 17px;
+  }
+  about__description {
+    font-size: 14px;
+    line-height: 1.79;
+    margin-bottom: 47px;
+  }
+  about__depiction {
+    font-size: 14px;
+    line-height: 1.79;
+    margin-inline: 0px;
+    margin-bottom: 62px;
+  }
+  about__button {
+    border-radius: 22px;
+    margin-bottom: 66px;
+    font-size: 16px;
+    line-height: 1.3;
+    color: var(--red-color);
+    margin-left: 357px;
+    margin-right: 164px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .about {
+    padding-left: 112px;
+    padding-right: 117px;
+    padding-top: 125px;
+  }
+}
 .container-advantages {
   margin-left: auto;
   margin-right: auto;
@@ -133,7 +300,7 @@
   background-color: var(--white-color);
 }
 .contacts__form > .contacts__fieldset {
-  border-bottom: 1px solid var(--border-color);
+  border-bottom: 1px solid var(--gray-color);
   width: 90%;
   padding-bottom: 25px;
 }
@@ -164,10 +331,10 @@
   align-content: center;
 }
 .contacts__cafe {
-  background-color: var(--contacts-color-background-cafe);
+  background-color: var(--orange-color);
 }
 .contacts__food-truck {
-  background-color: var(--contacts-color-background-food-truck);
+  background-color: var(--green-color);
 }
 .contacts__opening-hours {
   color: var(--text);
@@ -378,8 +545,7 @@ button {
     border-radius: 22px;
     transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
   }
-  .nav__btn:focus,
-  .nav__btn:hover {
+  .nav__btn:focus, .nav__btn:hover {
     background: #ecebeb;
   }
 }
@@ -399,8 +565,7 @@ button {
     border-radius: 22px;
     transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
   }
-  .nav__btn:focus,
-  .nav__btn:hover {
+  .nav__btn:focus, .nav__btn:hover {
     background: #ecebeb;
   }
 }
@@ -581,6 +746,8 @@ button {
   justify-content: flex-start;
   align-items: flex-start;
   margin-left: 20px;
+  width: 234px;
+  height: 135px;
 }
 
 .footer-title-small {
@@ -733,7 +900,7 @@ button {
   width: 100%;
   height: auto;
   -o-object-fit: cover;
-  object-fit: cover;
+     object-fit: cover;
 }
 
 .products__card {
@@ -741,7 +908,105 @@ button {
   bottom: 122px;
 }
 
+.card__header {
+  font-size: 14px;
+  margin-bottom: 10px;
+  line-height: 1.17;
+  color: var(--menu-color);
+}
 
+.products__header {
+  display: grid;
+  padding-top: 20px;
+  font-size: 20px;
+  font-family: Titan One;
+  color: var(--white-color);
+  text-align: center;
+}
+.products__header::after {
+  font-size: 18px;
+  content: "\a...";
+  white-space: pre;
+}
+
+.products__header-small {
+  text-align: center;
+  margin-top: 15px;
+  font-family: Titan One;
+  color: var(--menu-color);
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 1.145;
+}
+
+.products__header-big {
+  text-align: center;
+  margin-top: 15px;
+  font-weight: 400;
+  font-size: 34px;
+  line-height: 1.145;
+  padding-bottom: 122px;
+  margin-bottom: 15px;
+  font-family: Titan One;
+  text-transform: uppercase;
+  color: var(--red-color);
+}
+
+.products__cards {
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  row-gap: 130px;
+}
+
+.products__arrow {
+  padding: 30px 120px 15px 120px;
+  align-items: center;
+}
+
+.card {
+  width: 280px;
+  height: 485px;
+  border-radius: 24px;
+}
+
+.card--pink {
+  background-color: var(--menu-color);
+}
+
+.card--brown {
+  background-color: #f0d1a5;
+}
+
+.card--green {
+  background-color: #c2e297;
+}
+
+@media screen and (min-width: 768px) and (max-width: 1199px) {
+  .products__cards {
+    display: flex;
+    flex-direction: unset;
+    flex-wrap: wrap;
+    gap: 30px;
+  }
+  .card {
+    max-width: 354px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .products__cards {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+  }
+  .card {
+    max-width: 270px;
+  }
+  .card:not(:first-child) {
+    margin-left: 30px;
+  }
+}
 :root {
   --pink-color: #ffb8ca;
   --menu-color: #ffb8ca;
@@ -751,14 +1016,21 @@ button {
   --white-color: #ffffff;
   --red-color: #d41443;
   --background-pink-color: #fff5f6;
+  --green-color: #c2e297;
+  --orange-color: #f0d1a5;
+  --gray-color: #e1e1e1;
 }
 
 body {
   background-color: #ffffff;
   color: #757575;
-  font-family: 'DM Sans', sans-serif;
+  font-family: "DM Sans", sans-serif;
   font-weight: 400;
   font-size: 16px;
+}
+
+a {
+  color: inherit;
 }
 
 ul {
@@ -799,8 +1071,7 @@ input {
   width: 250px;
   height: 502px;
   background: #e17992;
-  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.04), 0px 2px 4px rgba(0, 0, 0, 0.08),
-    0px 1px 3px rgba(0, 0, 0, 0.16);
+  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.04), 0px 2px 4px rgba(0, 0, 0, 0.08), 0px 1px 3px rgba(0, 0, 0, 0.16);
   transform: translateX(150%);
   transition: transform 250ms ease-in-out;
   z-index: 5;
@@ -863,8 +1134,7 @@ input {
   border-radius: 22px;
   transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
-.nav__btn-mobile:focus,
-.nav__btn-mobile:hover {
+.nav__btn-mobile:focus, .nav__btn-mobile:hover {
   background: #ecebeb;
 }
 
@@ -891,4 +1161,4 @@ input {
   .mobile__menu-container {
     display: none;
   }
-} /*# sourceMappingURL=main.css.map */
+}/*# sourceMappingURL=main.css.map */
