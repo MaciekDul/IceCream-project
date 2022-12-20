@@ -1,3 +1,14 @@
+.products__section {
+  padding: 98px 0;
+
+  @media screen and (min-width: 768px) {
+    padding: 112px 0;
+  }
+  @media screen and (min-width: 1200px) {
+    padding: 119px 0;
+  }
+}
+
 .products__container {
   box-sizing: border-box;
   padding: 0 15px;
@@ -81,9 +92,13 @@
   color: var(--white-color);
   text-align: center;
   &::after {
-    font-size: 18px;
-    content: '\A\A. . .';
-    white-space: pre;
+    display: block;
+    content: '';
+    background-image: url("data:image/svg+xml,%3Csvg version='1.1' xmlns='http://www.w3.org/2000/svg' xmlns:xlink='http://www.w3.org/1999/xlink' viewBox='0 0 139 32'%3E%3Cpath fill='%23fff' style='fill: var(--color1, %23fff)' d='M85.333 16c0 8.837-7.163 16-16 16s-16-7.163-16-16c0-8.837 7.163-16 16-16s16 7.163 16 16z'%3E%3C/path%3E%3Cpath fill='%23fff' style='fill: var(--color1, %23fff)' d='M32 16c0 8.837-7.163 16-16 16s-16-7.163-16-16c0-8.837 7.163-16 16-16s16 7.163 16 16z'%3E%3C/path%3E%3Cpath fill='%23fff' style='fill: var(--color1, %23fff)' d='M138.667 16c0 8.837-7.163 16-16 16s-16-7.163-16-16c0-8.837 7.163-16 16-16s16 7.163 16 16z'%3E%3C/path%3E%3C/svg%3E");
+    width: 26px;
+    height: 6px;
+    background-size: contain;
+    margin: 30px auto;
   }
   &::before {
     display: grid;
@@ -237,11 +252,6 @@
     padding-top: 30px;
     font-size: 30px;
     line-height: calc(34.35 / 30);
-    &::after {
-      font-size: 20px;
-      content: '\A. . .';
-      white-space: pre;
-    }
     &::before {
       display: grid;
       content: '';
