@@ -421,22 +421,25 @@ text-align: right;
     .footer-infotel{
         margin: 0;
     }
-
+//gorna czesc- nad kreska 2019//
     .footer-top{
         display: flex;
         flex-direction: row;
-        margin:0;
+        margin: auto;
         justify-content: space-between;
         align-items: center;
         margin-top: 165px;
+        max-width: 1045px;
+        width: 100vw;
+        margin-bottom: 97px;
     }
+
+    //lewy kontener z tytulami//
        .footer-title{
         margin-left: 20px;
         display: flex;
         flex-direction: column;
         justify-content: center;
-     
-        // 
         width: 472px;
      
     }
@@ -471,6 +474,39 @@ text-align: right;
 
     }
 
+
+//prawy kontener - social media + kontakt//
+
+  .footer-infotel{
+        margin-right: 20px;
+        align-items: flex-end;
+        font-size: 16px;
+        line-height: 30px;
+        letter-spacing: 0.02em;
+        font-weight: 700;
+   }
+
+   .footer-contact{
+       font-size: 16px;
+        line-height: 30px;
+        letter-spacing: 0.02em;
+        font-weight: 700;
+   }
+
+
+   .footer-end{
+    height: 45px;
+
+   }
+
+    .footer-end__text{
+        width: 100vw;
+        display: flex;
+        min-width: 276px;
+        font-size: 14px;
+        letter-spacing: 0.02em;
+
+    }
 }
 
 
