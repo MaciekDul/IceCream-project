@@ -210,7 +210,11 @@ button {
   right: -20%;
   width: 346px;
   height: 344px;
+
+  background: var(--menu-color);
+
   background: var(--pink-color);
+
   border-radius: 50%;
   animation: showRightSmart 3s, pulsation 2s linear 3s infinite;
 
@@ -370,7 +374,7 @@ button {
 
 
     &:hover {
-      background-color: #ecebeb;
+      background-color: var(--white-color);
     }
   }
 
@@ -382,7 +386,7 @@ button {
     font-size: 14px;
     line-height: 1.3;
   }
-}
+
 
 .hero__milk {
   width: 124px;
@@ -447,7 +451,7 @@ button {
 .hero .arrow-right {
   width: 6px;
   height: 5px;
-  fill: currentColor;
+  fill: #ecebeb ;
 
   @media screen and (min-width: 1200px) {
     width: 8px;
@@ -490,7 +494,7 @@ button {
   font-weight: 400;
   line-height: 1.25;
   letter-spacing: 0.03em;
-  color: #ffffff;
+  color: var(--white-color);
   text-align: right;
 
   @media screen and (min-width: 1200px) {
@@ -498,3 +502,4 @@ button {
     line-height: 1.28;
     letter-spacing: 0.03em;
 
+  }
