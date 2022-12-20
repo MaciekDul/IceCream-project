@@ -125,6 +125,11 @@ margin-bottom: 50px;
   width:calc( ( 100vw - 92px ) / 2);
   gap:17px;
 }
+
+&__tablet{
+  display:flex;
+  flex-direction: column;
+}
 &__images{
     margin-bottom: 56px;
 }
@@ -171,6 +176,21 @@ width:176px;
     letter-spacing: 0.06em;
     margin-bottom: 102px;
     }
+   &__desktop{
+    display: flex;
+    flex-direction: column;
+    
+   }
+   &__images{
+    margin-bottom: 39px;
+    margin-right: 74px;
+}
+&__description{
+margin-bottom: 35px;
   }
-  
+  &__depiction{
+margin-bottom: 45px;
+}
+
+} 
 }
