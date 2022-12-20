@@ -179,7 +179,7 @@ button {
 
 .hero {
     overflow: hidden;
-    background: --background-pink-color;
+    background: var(--pink-color);
     height: 500px;
     margin: 0 auto;
 
@@ -212,7 +212,7 @@ button {
     right: -20%;
     width: 346px;
     height: 344px;
-    background: --pink-color;
+    background: var(--pink-color);
     border-radius: 50%;
     animation: showRightSmart 3s, pulsation 2s linear 3s infinite;
 
@@ -336,16 +336,16 @@ button {
 
 .hero__title {
     @include fontTitle($fs: 26px, $lh: 30 / 26);
-    color: #ffffff;
+    color:var(--white-color);
 
     @media screen and (min-width: 768px) {
         @include fontTitle($fs: 22px, $lh: 1.14);
-        color: #ffffff;
+        color: var(--white-color);
     }
 
     @media screen and (min-width: 1200px) {
         @include fontTitle($fs: 38px, $lh: 1.15);
-        color: #ffffff;
+        color:var(--white-color);
     }
 }
 
@@ -355,7 +355,7 @@ button {
     height: 106px;
     line-height: calc(48 / 45);
     letter-spacing: 0.04em;
-    color: --background-color;
+    color: var(--white-color);
     font-family: 'Titan One';
 
     @media screen and (min-width: 768px) {
@@ -401,7 +401,7 @@ button {
     display: block;
     border-radius: 22px;
     padding: 7px 14px;
-    background-color: #d41443;
+    background-color:var(--red-color);
     font-family: 'DM Sans',
         sans-serif;
     ;
@@ -411,11 +411,11 @@ button {
     line-height: 1.25;
 
     &--right {
-        background-color: #ffffff;
+        background-color: var(--white-color);
         transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 
         &:hover {
-            background-color: #ecebeb;
+            background-color:var(--white-color);
         }
     }
 
@@ -475,7 +475,7 @@ button {
     line-height: 1.5;
     font-weight: 400;
     letter-spacing: 0.03em;
-    color: #ffffff;
+    color:var(--white-color);
     animation: showText 3s;
 
     @media screen and (max-width: 767px) {
@@ -501,8 +501,8 @@ button {
     justify-content: center;
     border: none;
     border-radius: 50%;
-    background-color: #ffffff;
-    color: #d41443;
+    background-color:var(--white-color);
+    color:var(--red-color);
 
     transition: color250ms cubic-bezier(0.4, 0, 0.2, 1), background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 
@@ -517,8 +517,8 @@ button {
 
     &:hover,
     &:focus {
-        color: #ffffff;
-        background-color: #d41443;
+        color:var(--white-color);
+        background-color:var(--red-color);
     }
 }
 
@@ -555,7 +555,7 @@ button {
     height: 44px;
     text-align: center;
     z-index: 2;
-    color: #ffffff;
+    color: var(--white-color);
 
     &:not(:last-child) {
         margin-bottom: 13px;
@@ -575,7 +575,7 @@ button {
     font-weight: 400;
     line-height: 1.25;
     letter-spacing: 0.03em;
-    color: #ffffff;
+    color: var(--white-color);
     text-align: right;
 
     @media screen and (min-width: 1200px) {
@@ -592,7 +592,7 @@ button {
     line-height: 1.14;
     letter-spacing: 0.04em;
     text-transform: uppercase;
-    color: #d41443;
+    color: var(--red-color);
     font-weight: 400;
 
     @media screen and (min-width: 1200px) {
@@ -608,7 +608,7 @@ button {
     position: absolute;
     top: -4px;
     right: -8px;
-    background: white;
+    background: var(--white-color);
     border-radius: 50%;
     z-index: -1;
     animation: pulsation 2s linear 3s infinite;
