@@ -1,4 +1,6 @@
 .contacts {
+  margin-top: 86px;
+  padding-bottom: 113px;
   &__hidden {
     visibility: hidden;
   }
@@ -94,10 +96,14 @@
 }
 @media (min-width: 768px) {
   .contacts {
+    margin-top: 125px;
+    padding-bottom: 165px;
     &__container {
       display: flex;
       flex-direction: row;
       justify-content: space-around;
+      width: 768px;
+      margin: auto;
     }
     &__btn {
       flex-direction: row;
@@ -117,6 +123,10 @@
 }
 @media (min-width: 1200px) {
   .contacts {
+    &__container {
+      width: 1200px;
+      margin: auto;
+    }
     &__form {
       width: 330px;
       height: 572px;
@@ -126,7 +136,7 @@
     &__block {
       margin-bottom: 32px;
     }
-    &opening-overs {
+    &__opening-overs {
       margin-bottom: 15px;
     }
     &__btn {
