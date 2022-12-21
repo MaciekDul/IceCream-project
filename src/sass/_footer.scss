@@ -330,11 +330,18 @@ text-align: right;
     .footer-infotel{
         margin: 0;
     }
+    .footer-top{
+        display: flex;
+        flex-direction: row;
+        margin-top: 165px;
+        justify-content: space-between;
+        margin-left: 20px;
+        margin-right: 20px;
+    }
 
     .footer-title{
-        margin-left: 20px;
+        
         display: flex;
-        margin-top: 165px;
         margin-bottom: 91px;
     }
 
