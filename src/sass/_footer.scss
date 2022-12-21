@@ -173,8 +173,7 @@ text-align: right;
     margin: 0;
     max-width: 1280px;
     width: 100vw;
-   
-    // flex-wrap: wrap;
+       // flex-wrap: wrap;
     
 }
 
@@ -183,8 +182,6 @@ text-align: right;
     font-weight: 400;
     display: flex;
     flex-direction: column;
-    // flex-wrap: wrap;
-    // margin: auto;
     justify-content: flex-start;
     align-items: flex-start;
     margin-left: 20px;
@@ -265,7 +262,7 @@ text-align: right;
 
 }
 
-// footer- napis Feel free + nr telefonu - jedna linijka//
+
 
 .footer-contact{
     display: flex;
@@ -399,7 +396,7 @@ text-align: right;
     .footer-infotel{
         margin: 0;
     }
-//gorna czesc- nad kreska 2019//
+
     .footer-top{
         display: flex;
         flex-direction: row;
@@ -412,7 +409,6 @@ text-align: right;
         margin-bottom: 97px;
     }
 
-    //lewy kontener z tytulami//
        .footer-title{
         margin-left: 20px;
         display: flex;
