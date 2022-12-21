@@ -1,11 +1,8 @@
 <!-- start header , logo , button mobile and navigation links-->
 <header class="header">
-
     <div class="container">
-
         <a href="#" class="header__logo link">
-            <img src="./images/logo.png" width="199px" height="50" alt="logo ice cream">
-            </img>
+            <img src="./images/logo.png" width="199px" height="50" alt="logo ice cream" />
         </a>
         <nav class="nav">
             <ul class="list nav__list">
@@ -50,82 +47,83 @@
 
   <section class="section hero">
     <div class="container hero__box">
-      <div class="hero__circle"></div>
-      <picture>
-        <source
-          srcset="
-          ./images/hero/ice.png 1x,
-          ./images/hero/ice@2x.png 2x
-        "
-          media="(min-width:1200px)"
-          type="image/png"
-        />
-        <source
-          srcset="
-          ./images/hero/ice.png 1x,
-          ./images/hero/ice@2x.png 2x
-        "
-          media="(min-width:768px)"
-          type="image/png"
-        />
-        <source
-          srcset="
-          ./images/hero/slider-ice.png 1x,
-          ./images/hero/slider-ice@2x.png 2x
-           ./images/hero/slider-ice@3x.png 3x
-        "
-          media="(min-width:480px)"
-          type="image/png"
-        />
-        <img class="hero__pic" src="./images/hero/ice.png" alt="człowiek" />
-      </picture>
       <div class="hero__content">
         <h1 class="hero__title">
-          ice cream made with
-          <span class="hero__title-main">passion</span>
+          ICE CREAM MADE WITH
+          <span class="hero__title-main">PASSION</span>
         </h1>
         <ul class="hero-list">
-          <li class="hero-list__item button--red">
-            <a href="#products" class="hero-list__link link">Products</a>
+          <li class="hero-list__item">
+            <button class="contacts__locations-btn">Products</button>
           </li>
           <li class="hero-list__item button">
-            <a href="#about" class="hero-list__link hero-list__link--right link"
-            >How it&#8242;s made&#63;</a
+            <button class="hero-list__link hero-list__link--right hero__button"
+            >How it&#8242;s made&#63;</button
             >
           </li>
         </ul>
       </div>
+      <div class="hero__circle">
       <picture>
         <source
           srcset="
-          ./images/hero/milk.png 1x,
-          ./images/hero/milk@2x.png 2x
+          ./images/hero/pc/ice.png 1x,
+          ./images/hero/tablet/ice@2x.png 2x
         "
           media="(min-width:1200px)"
           type="image/png"
         />
         <source
-          srcset="./images/hero/milk.png 1x, ./images/hero/milk@2x.png 2x"
+          srcset="
+          ./images/hero/pc/ice.png 1x,
+          ./images/hero/tablet/ice@2x.png 2x
+        "
           media="(min-width:768px)"
           type="image/png"
         />
-        <img class="hero__milk" src="./images/hero/milk.png" alt="milk" />
+        <source
+          srcset="
+          ./images/hero/mobile/slider-ice.png 1x,
+          ./images/hero/mobile/slider-ice@2x.png 2x
+           ./images/hero/mobile/slider-ice@3x.png 3x
+        "
+          media="(min-width:480px)"
+          type="image/png"
+        />
+        <img class="hero__pic" src="./images/hero/pc/ice.png" alt="człowiek" />
+      </picture>
+      </div>
+      <picture>
+        <source
+          srcset="
+          ./images/hero/pc/milk.png 1x,
+          ./images/hero/tablet/milk@2x.png 2x
+        "
+          media="(min-width:1200px)"
+          type="image/png"
+        />
+        <source
+          srcset="./images/hero/pc/milk.png 1x, ./images/hero/tablet/milk@2x.png 2x"
+          media="(min-width:768px)"
+          type="image/png"
+        />
+        <img class="hero__milk" src="./images/hero/pc/milk.png" alt="milk" />
       </picture>
       <picture>
         <source
           srcset="
-          ./images/hero/girl-ice.png 1x,
-          ./images/hero/girl-ice@2x.png 2x
+          ./images/hero/pc/girl-ice.png 1x,
+          ./images/hero/tablet/girl-ice@2x.png 2x
         "
           media="(min-width:1200px)"
           type="image/png"
         />
         <source
-          srcset="./images/hero/girl-ice.png 1x, ./images/hero/girl-ice@2x.png 2x, ./images/hero/girl-ice@3x.png 3x"
+          srcset="./images/hero/pc/girl-ice.png 1x, ./images/hero/tablet/girl-ice@2x.png 2x, ./images/hero/tablet/girl-ice@3x.png 3x"
           media="(min-width:768px)"
           type="image/png"
         />
-        <img class="hero__girl" src="./images/hero/girl-ice.png" alt="girl" />
+        <img class="hero__girl" src="./images/hero/pc/girl-ice.png" alt="girl" />
       </picture>
       <div class="hero__information">
         <p>
@@ -133,7 +131,7 @@
           labore et
         </p>
         <button type="button" class="hero__bttn" aria-label="Read More">
-          <img alt="arrow-right" src="./images/arrow-right.png"/>
+          <img alt="arrow" src="./images/hero/arrow.png"/>
         </button>
       </div>
       <ul class="presentation-list">
@@ -147,13 +145,16 @@
         <li class="presentation-list__item">
         <span class="presentation-list__text">
           <span class="presentation-list__numbers">23</span>
-          food trucks
+          <div>
+            food trucks
+          </div>
         </span>
           <div class="presentation-list__circle"></div>
         </li>
       </ul>
     </div>
   </section>
+
 </header>
 
 
