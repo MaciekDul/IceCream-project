@@ -1,6 +1,7 @@
 
 .footer-section{
     display: flex;
+    flex-direction: column;
     background: #FFF5F6;
     margin: 0;
 }
@@ -10,10 +11,8 @@
     flex-direction: column;
     margin: 0;
     max-width: 1280px;
-    width: 100vw;
-   
     // flex-wrap: wrap;
-    
+
 }
 
 .footer-title{
@@ -58,7 +57,7 @@
 }
 
 
-// footer- social media// 
+// footer- social media//
 .footer-infotel{
     display: flex;
     flex-direction: column;
@@ -72,16 +71,16 @@
     gap: 28px;
     fill: white;
     margin-top: 43px;
-  
+
 }
 
 
 .footer-socialmedia__icon{
-    fill: white; 
+    fill: white;
     background-color:  #FEA5BB;
     justify-content: space-between;
     border-radius: 50%;
-  
+
 
 }
 
@@ -98,7 +97,7 @@
     letter-spacing: 0em;
     text-align: right;
     margin-top: 46px;
-   
+
 }
 
 .footer-contact__link{
@@ -115,7 +114,6 @@ text-align: right;
     display: flex;
     flex-wrap: wrap;
     height: 89px;
-    border-top: 100vw;
     border-top: 1px solid #E1E1E1;
     margin: 0;
     bottom: 0;
@@ -137,12 +135,12 @@ text-align: right;
         display: flex;
         flex-direction: column;
     }
-    .footer-title-small, 
+    .footer-title-small,
     .footer-socialmedia,
     .footer-title{
         margin: 0;
     }
-  
+
 .footer-title{
     margin-left: 20px;
 
@@ -172,9 +170,15 @@ text-align: right;
     flex-direction: column;
     margin: 0;
     max-width: 1280px;
+
     width: 100vw;
        // flex-wrap: wrap;
     
+
+
+    // flex-wrap: wrap;
+
+
 }
 
 .footer-title{
@@ -219,7 +223,7 @@ text-align: right;
 }
 
 
-// footer- social media// 
+// footer- social media//
 .footer-infotel{
     display: flex;
     flex-direction: column;
@@ -233,7 +237,7 @@ text-align: right;
     gap: 28px;
     fill: white;
     margin-top: 43px;
-  
+
 }
 
 .footer-socialmedia__link{
@@ -249,12 +253,12 @@ text-align: right;
 
 }
 .footer-socialmedia__icon{
-    fill: white; 
+    fill: white;
     background-color:  #FEA5BB;
     justify-content: space-between;
     border-radius: 50%;
 
-    
+
     &:hover,
     &:focus{
         background-color: #D41443;
@@ -275,7 +279,7 @@ text-align: right;
     letter-spacing: 0em;
     text-align: right;
     margin-top: 46px;
-   
+
 }
 
 .footer-contact__link{
@@ -293,15 +297,14 @@ text-align: right;
     display: flex;
     flex-wrap: wrap;
     height: 89px;
-    border-top: 100vw;
     border-top: 1px solid #E1E1E1;
     margin: 0;
     bottom: 0;
     width: 100%;
     height: 89px;
     margin-bottom: 25px;
-    
-   
+
+
 }
 .footer-end__text{
     display: flex;
@@ -331,7 +334,7 @@ text-align: right;
     .footer-infotel{
         margin: 0;
     }
-    
+
     .footer-title{
         margin-left: 20px;
         display: flex;
@@ -346,7 +349,7 @@ text-align: right;
         letter-spacing: 0.04em;
         margin-bottom: 16px;
         min-width: 340px;
-        
+
 
     }
     .footer-top{
@@ -367,10 +370,9 @@ text-align: right;
     }
 
     .footer-end{
-        width: 100vw;
         display: flex;
         flex-wrap: nowrap;
-        
+
     }
 
     .footer-end__text{
@@ -414,7 +416,6 @@ text-align: right;
         align-items: center;
         margin-top: 165px;
         max-width: 1045px;
-        width: 100vw;
         margin-bottom: 97px;
     }
 
@@ -424,7 +425,7 @@ text-align: right;
         flex-direction: column;
         justify-content: center;
         width: 472px;
-     
+
     }
 
 
@@ -433,7 +434,6 @@ text-align: right;
         flex-direction: row;
         flex-wrap: nowrap;
         width: 472px;
-        width: 100vw;
         font-size: 30px;
         font-weight: 400;
         letter-spacing: 0.04em;
@@ -447,13 +447,12 @@ text-align: right;
         flex-direction: row;
        flex-wrap: nowrap;
         width: 474px;
-        width: 100vw;
         font-size: 58px;
         font-weight: 400;
         line-height: 66px;
         letter-spacing: 0.06em;
         min-width: 470px;
-        
+
 
     }
 
@@ -483,7 +482,6 @@ text-align: right;
    }
 
     .footer-end__text{
-        width: 100vw;
         display: flex;
         min-width: 276px;
         font-size: 14px;

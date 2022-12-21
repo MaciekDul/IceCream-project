@@ -29,6 +29,7 @@ button {
   position: relative;
   display: flex;
   justify-content: baseline;
+  flex-direction: column;
   align-items: center;
   background: var(--menu-color);
   padding-top: 8px;
@@ -175,43 +176,110 @@ button {
 
 .hero {
   overflow: hidden;
-  background: --background-pink-color;
-  height: 500px;
+  background: var(--menu-color);
+  height: 550px;
   margin: 0 auto;
-
+  width: 100%;
   @media screen and (min-width: 768px) {
     height: 400px;
   }
-
   @media screen and (min-width: 1200px) {
     height: 665px;
   }
 }
-
 .hero__box {
   position: relative;
+  align-items: center;
   max-width: 320px;
   height: 100%;
+
+  .hero__content {
+    max-width: 218px;
+    position: absolute;
+    z-index: 3;
+    @media screen and (max-width: 767px) {
+      top: 50%;
+      transform: translateY(-40%);
+    }
+    @media screen and (min-width: 768px) {
+      top: 25%;
+      max-width: 162px;
+    }
+    @media screen and (min-width: 1200px) {
+      max-width: 277px;
+    }
+  }
+  .hero__title {
+
+    font-family: "Titan One", serif;
+    color: var(--white-color);
+
+    @media screen and (min-width: 1200px) {
+      font-size: 38px;
+      line-height: 1.16;
+      letter-spacing: 0.04em;
+    }
+  }
+
+  .hero__title-main {
+    color: var(--red-color);
+    font-size: 60px;
+  }
+
+  .hero-list {
+    display: flex;
+    margin-top: 19px;
+    list-style: none;
+    @media screen and (min-width: 768px) {
+      margin-top: 20px;
+    }
+    @media screen and (min-width: 1200px) {
+      margin-top: 25px;
+    }
+  }
+  .hero-list__item {
+    display: block;
+    height: 24px;
+    margin: 0;
+    margin-right: 8px;
+    @media screen and (min-width: 1200px) {
+      height: 40px;
+      margin-right: 15px;
+    }
+  }
+
+  .hero__button {
+    display: inline-block;
+    justify-items: baseline;
+    width: 160px;
+    height: 44px;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 1.3;
+    background-color: var(--white-color);
+    color: var(--red-color);
+    border: none;
+    box-shadow: 0px 4px 4px rgb(0 0 0 / 25%);
+    border-radius: 22px;
+    transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  }
 
   @media screen and (min-width: 768px) {
     max-width: 768px;
   }
-
   @media screen and (min-width: 1200px) {
     max-width: 1200px;
   }
 }
-
 .hero__circle {
   position: absolute;
   bottom: 75px;
   right: -20%;
   width: 346px;
   height: 344px;
-  background: --pink-color;
+  background: var(--text);
   border-radius: 50%;
   animation: showRightSmart 3s, pulsation 2s linear 3s infinite;
-
   @media screen and (min-width: 768px) {
     animation: showRight 3s, pulsation 2s linear 3s infinite;
     width: 324px;
@@ -219,207 +287,81 @@ button {
     right: 20%;
     bottom: 45px;
   }
-
   @media screen and (min-width: 1200px) {
     width: 538px;
     height: 538px;
     bottom: 75px;
   }
-}
-
-@keyframes showRight {
-  0% {
-    right: -100%;
+  @keyframes showRight {
+    0% {
+      right: -100%;
+    }
+    100% {
+      right: 20%;
+    }
   }
-
-  100% {
-    right: 20%;
+  @keyframes showRightSmart {
+    0% {
+      right: -100%;
+    }
+    100% {
+      right: -20%;
+    }
   }
-}
-
-@keyframes showRightSmart {
-  0% {
-    right: -100%;
+  @keyframes showBottom {
+    0% {
+      bottom: -100%;
+    }
+    100% {
+      bottom: 0;
+    }
   }
-
-  100% {
-    right: -20%;
+  @keyframes pulsation {
+    0% {
+      transform: scale(1);
+    }
+    20% {
+      transform: scale(1.1);
+    }
+    40% {
+      transform: scale(1);
+    }
+    60% {
+      transform: scale(1);
+    }
+    80% {
+      transform: scale(1.1);
+    }
+    100% {
+      transform: scale(1);
+    }
   }
-}
-
-@keyframes showBottom {
-  0% {
-    bottom: -100%;
-  }
-
-  100% {
+  .hero__pic {
+    position: absolute;
     bottom: 0;
-  }
-}
-
-@keyframes pulsation {
-  0% {
-    transform: scale(1);
-  }
-
-  20% {
-    transform: scale(1.1);
-  }
-
-  40% {
-    transform: scale(1);
-  }
-
-  60% {
-    transform: scale(1);
-  }
-
-  80% {
-    transform: scale(1.1);
-  }
-
-  100% {
-    transform: scale(1);
-  }
-}
-
-.hero__content {
-  max-width: 218px;
-  position: absolute;
-  z-index: 3;
-
-  @media screen and (max-width: 767px) {
-    top: 50%;
-    transform: translateY(-40%);
-  }
-
-  @media screen and (min-width: 768px) {
-    top: 25%;
-    max-width: 162px;
-  }
-
-  @media screen and (min-width: 1200px) {
-    max-width: 277px;
-  }
-}
-
-.hero__pic {
-  position: absolute;
-  bottom: 0;
-  right: 32px;
-  z-index: 2;
-  margin-left: auto;
-  width: 175px;
-  height: 410px;
-  animation: showBottom 2s;
-
-  @media screen and (min-width: 768px) {
-    & {
-      width: 143px;
-      height: 336px;
-      right: 32%;
+    right: 32px;
+    z-index: 2;
+    margin-left: auto;
+    width: 175px;
+    height: 410px;
+    animation: showBottom 2s;
+    @media screen and (min-width: 768px) {
+      & {
+        width: 143px;
+        height: 336px;
+        right: 32%;
+      }
+    }
+    @media screen and (min-width: 1200px) {
+      & {
+        width: 236px;
+        height: 557px;
+        right: 35%;
+      }
     }
   }
-
-  @media screen and (min-width: 1200px) {
-    & {
-      width: 236px;
-      height: 557px;
-      right: 35%;
-    }
-  }
-}
-
-.hero__title {
-  @include fontTitle($fs: 26px, $lh: 30 / 26);
-  color: #ffffff;
-
-  @media screen and (min-width: 768px) {
-    @include fontTitle($fs: 22px, $lh: 1.14);
-    color: #ffffff;
-  }
-
-  @media screen and (min-width: 1200px) {
-    @include fontTitle($fs: 38px, $lh: 1.15);
-    color: #ffffff;
-  }
-}
-
-.hero__title-main {
-  font-size: 48px;
-  width: 218px;
-  height: 106px;
-  line-height: calc(48 / 45);
-  letter-spacing: 0.04em;
-  color: --background-color;
-  font-family: 'Titan One';
-
-  @media screen and (min-width: 768px) {
-    font-size: 34px;
-    line-height: 0.9;
-    letter-spacing: 0.03em;
-  }
-
-  @media screen and (min-width: 1200px) {
-    font-size: 58px;
-    line-height: 0.89;
-    letter-spacing: 0.03em;
-  }
-}
-
-.hero-list {
-  display: flex;
-  margin-top: 19px;
-  list-style: none;
-
-  @media screen and (min-width: 768px) {
-    margin-top: 20px;
-  }
-
-  @media screen and (min-width: 1200px) {
-    margin-top: 25px;
-  }
-}
-
-.hero-list__item {
-  display: block;
-  height: 24px;
-  margin: 0;
-  margin-right: 8px;
-
-  @media screen and (min-width: 1200px) {
-    height: 40px;
-    margin-right: 15px;
-  }
-}
-
-.hero-list__link {
-  display: block;
-  border-radius: 22px;
-  padding: 7px 14px;
-  background-color: #d41443;
-  font-family: 'DM Sans', sans-serif;
-  color: inherit;
-  font-weight: 400;
-  font-size: 8px;
-  line-height: 1.25;
-
-  &--right {
-    background-color: #ffffff;
-    transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
-
-    &:hover {
-      background-color: #ecebeb;
-    }
-  }
-
-  @media screen and (min-width: 1200px) {
-    padding: 11px 20px;
-  }
-
-  @media screen and (min-width: 1200px) {
-    font-size: 14px;
-    line-height: 1.3;
+  &:hover {
+    background-color: var(--white-color);
   }
 }
 
@@ -428,11 +370,9 @@ button {
   height: 126px;
   position: absolute;
   bottom: 28px;
-
   @media screen and (max-width: 767px) {
     display: none;
   }
-
   @media screen and (min-width: 1200px) {
     width: 188px;
     height: 191px;
@@ -440,7 +380,6 @@ button {
     left: 37px;
   }
 }
-
 .hero__girl {
   width: 168px;
   height: 133px;
@@ -448,130 +387,95 @@ button {
   bottom: 0;
   right: 5%;
   z-index: 2;
-
   @media screen and (max-width: 767px) {
     display: none;
   }
-
   @media screen and (min-width: 1200px) {
     width: 293px;
     height: 232px;
     right: 69px;
   }
 }
-
 .hero__information {
-  max-width: 114px;
+
   position: absolute;
-  bottom: 40px;
-  left: 20%;
-  font-size: 8px;
-  line-height: 1.5;
-  font-weight: 400;
-  letter-spacing: 0.03em;
-  color: #ffffff;
-  animation: showText 3s;
-
-  @media screen and (max-width: 767px) {
-    display: none;
-  }
-
+  color: var(--white-color);
   @media screen and (min-width: 1200px) {
     max-width: 200px;
     bottom: 56px;
     font-size: 14px;
     line-height: 1.4;
     letter-spacing: 0.03em;
+    left: 255px;
   }
 }
-
 .hero__bttn {
-  width: 18px;
-  height: 18px;
-  padding: 0;
-  margin-top: 7px;
-  display: flex;
-  align-items: center;
-  justify-content: center;
   border: none;
-  border-radius: 50%;
-  background-color: #ffffff;
-  color: #d41443;
-
-  transition: color250ms cubic-bezier(0.4, 0, 0.2, 1),
-    background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
-
-  @media screen and (max-width: 767px) {
-    display: none;
-  }
-
-  @media screen and (min-width: 1200px) {
-    width: 26px;
-    height: 26px;
-  }
-
-  &:hover,
-  &:focus {
-    color: #ffffff;
-    background-color: #d41443;
-  }
+  background-color: transparent;
+  width: 26px;
+  height: 26px;
+  padding: 0;
+  margin-top: 20px;
 }
-
 .hero .arrow-right {
   width: 6px;
   height: 5px;
-  fill: currentColor;
-
+  fill: #ECEBEB ;
   @media screen and (min-width: 1200px) {
     width: 8px;
     height: 7px;
   }
 }
-
 .presentation-list {
   position: absolute;
   top: 25%;
   right: 44px;
   list-style: none;
-
   @media screen and (max-width: 767px) {
     display: none;
   }
-
   @media screen and (min-width: 1200px) {
     right: 75px;
   }
 }
-
 .presentation-list__item {
   position: relative;
-  display: flex;
-  width: 51px;
-  height: 44px;
-  text-align: center;
-  z-index: 2;
-  color: #ffffff;
-
   &:not(:last-child) {
     margin-bottom: 13px;
   }
 
+  .presentation-list__circle {
+    width: 30px;
+    height: 30px;
+    background-color: var(--white-color);
+    border-radius: 50%;
+    position: absolute;
+    top: 0;
+    right: -20px;
+  }
   @media screen and (min-width: 1200px) {
     width: 92px;
-
     &:not(:last-child) {
       margin-bottom: 30px;
     }
   }
 }
-
 .presentation-list__text {
-  font-size: 8px;
   font-weight: 400;
   line-height: 1.25;
   letter-spacing: 0.03em;
-  color: #ffffff;
+  color: var(--white-color);
   text-align: right;
+  display: block;
+  position: relative;
+  z-index: 1;
+
+  .presentation-list__numbers {
+    font-size: 46px;
+    color: var(--red-color);
+    font-family: "Titan One", sans-serif;
+  }
+
 
   @media screen and (min-width: 1200px) {
     font-size: 14px;
@@ -580,36 +484,4 @@ button {
   }
 }
 
-.presentation-list__numbers {
-  font-family: 'Titan One', sans-serif;
-  font-size: 28px;
-  line-height: 1.14;
-  letter-spacing: 0.04em;
-  text-transform: uppercase;
-  color: #d41443;
-  font-weight: 400;
 
-  @media screen and (min-width: 1200px) {
-    font-size: 46px;
-    line-height: 1.15;
-    letter-spacing: 0.03em;
-  }
-}
-
-.presentation-list__circle {
-  width: 16px;
-  height: 16px;
-  position: absolute;
-  top: -4px;
-  right: -8px;
-  background: white;
-  border-radius: 50%;
-  z-index: -1;
-  animation: pulsation 2s linear 3s infinite;
-
-  @media screen and (min-width: 1200px) {
-    width: 30px;
-    height: 30px;
-    right: -12px;
-  }
-}
