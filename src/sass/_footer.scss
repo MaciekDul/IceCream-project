@@ -2,7 +2,7 @@
 .footer-section{
     display: flex;
     flex-direction: column;
-    background: #FFF5F6;
+    background: var(--background-pink-color);
     margin: 0;
 }
 
@@ -34,7 +34,7 @@
     font-size: 18px;
     line-height: 21px;
     text-transform: uppercase;
-    color: #FFA5BA;
+    color: var(--text);
     // margin-top: 113px;
     margin-bottom: 17px;
     // flex-wrap: wrap;
@@ -49,7 +49,7 @@
     font-size: 34px;
     line-height: 39px;
     text-transform: uppercase;
-    color:  #D41443;
+    color: var(--red-color);
     letter-spacing: 0.04em;
     text-align:left;
     align-items: flex-start;
@@ -69,15 +69,15 @@
     display: flex;
     justify-content: flex-end;
     gap: 28px;
-    fill: white;
+    fill: var(--white-color);
     margin-top: 43px;
 
 }
 
 
 .footer-socialmedia__icon{
-    fill: white;
-    background-color:  #FEA5BB;
+    fill: var(--white-color);
+    background-color: var(--pink-lazy);
     justify-content: space-between;
     border-radius: 50%;
 
@@ -101,12 +101,12 @@
 }
 
 .footer-contact__link{
-color:#D41443;
+color:var(--red-color);
 text-align: right;
 }
 
 .footer-contact__text{
-color: var(--black);
+color: var(--text-color);
 text-align: right;
 
 }
@@ -114,7 +114,7 @@ text-align: right;
     display: flex;
     flex-wrap: wrap;
     height: 89px;
-    border-top: 1px solid #E1E1E1;
+    border-top: 1px solid var(--gray-color);
     margin: 0;
     bottom: 0;
     width: 100%;
@@ -161,7 +161,7 @@ text-align: right;
 }
 .footer-section{
     display: flex;
-    background: #FFF5F6;
+    background: var(--background-pink-color);
     margin: 0;
 }
 
@@ -180,8 +180,6 @@ text-align: right;
     font-weight: 400;
     display: flex;
     flex-direction: column;
-    // flex-wrap: wrap;
-    // margin: auto;
     justify-content: flex-start;
     align-items: flex-start;
     margin-left: 20px;
@@ -196,7 +194,7 @@ text-align: right;
     font-size: 18px;
     line-height: 21px;
     text-transform: uppercase;
-    color: #FFA5BA;
+    color: var(--text);
     margin-top: 113px;
     margin-bottom: 17px;
     // flex-wrap: wrap;
@@ -211,7 +209,7 @@ text-align: right;
     font-size: 34px;
     line-height: 39px;
     text-transform: uppercase;
-    color:  #D41443;
+    color: var(--red-color);
     letter-spacing: 0.04em;
     text-align:left;
     align-items: flex-start;
@@ -231,33 +229,31 @@ text-align: right;
     display: flex;
     justify-content: flex-end;
     gap: 28px;
-    fill: white;
+    fill: var(--white-color);
     margin-top: 43px;
 
-}
-
-.footer-socialmedia__link{
-    display: flex;
-    border-radius: 50%;
-    fill: white;
-    justify-content: center;
+    &__link{
+        display: flex;
+        border-radius: 50%;
+        fill: var(--white-color);
+        justify-content: center}
 
     &:hover,
     &:focus{
-        background-color: #D41443;
+        background-color: var(--red-color);
     }
 
 }
 .footer-socialmedia__icon{
-    fill: white;
-    background-color:  #FEA5BB;
+    fill: var(--white-color);
+    background-color:  var(--pink-lazy);
     justify-content: space-between;
     border-radius: 50%;
 
 
     &:hover,
     &:focus{
-        background-color: #D41443;
+        background-color: var(--red-color);
     }
 
 }
@@ -279,7 +275,7 @@ text-align: right;
 }
 
 .footer-contact__link{
-color:#D41443;
+color: var(--red-color);
 text-align: right;
 }
 
@@ -293,7 +289,7 @@ text-align: right;
     display: flex;
     flex-wrap: wrap;
     height: 89px;
-    border-top: 1px solid #E1E1E1;
+    border-top: 1px solid var(--gray-color);
     margin: 0;
     bottom: 0;
     width: 100%;
@@ -313,7 +309,7 @@ text-align: right;
     line-height: 21px;
     text-align: center;
     width: 150px;
-    color: #907E82;
+    color: var(--secondary-text-color);
     padding-top: 22px;
 }
 
@@ -360,23 +356,22 @@ text-align: right;
     .footer-contact{
         font-size: 14px;
         font-weight: 700;
-        color: #000000;
+        color: var(--black);
     }
 
     .footer-end{
         display: flex;
         flex-wrap: nowrap;
 
-    }
-
-    .footer-end__text{
-        width: 100vw;
-        display: flex;
-        min-width: 276px;
-        font-size: 14px;
-        letter-spacing: 0.02em;
+     &__text{
+            width: 100vw;
+            display: flex;
+            min-width: 276px;
+            font-size: 14px;
+            letter-spacing: 0.02em;
 
     }
+}
 }
 
 @media screen and (min-width: 1280px){
@@ -384,6 +379,7 @@ text-align: right;
     .footer-section{
         display: flex;
         margin: 0;
+        margin: auto;
         justify-content: center;
         align-items: center;
 
@@ -391,7 +387,8 @@ text-align: right;
 
     .footer-container{
         display: flex;
-        justify-content: center;
+        width: 1280px;
+        // justify-content: center;
         margin: 0;
 
     }
@@ -408,18 +405,17 @@ text-align: right;
         margin: auto;
         justify-content: space-between;
         align-items: center;
-        margin-top: 165px;
-        max-width: 1045px;
-        margin-bottom: 97px;
+      
+         margin: 165px 20px 97px 20px;
     }
 
     //lewy kontener z tytulami//
        .footer-title{
-        margin-left: 20px;
+      
         display: flex;
         flex-direction: column;
         justify-content: center;
-        width: 472px;
+        width: 490px;
 
     }
 
@@ -427,13 +423,13 @@ text-align: right;
     .footer-title-small{
         display: flex;
         flex-direction: row;
-        flex-wrap: nowrap;
-        width: 472px;
+        
+        // width: 474px;
         font-size: 30px;
         font-weight: 400;
         letter-spacing: 0.04em;
         line-height: 34px;
-        min-width: 470px;
+        // min-width: 470px;
 
     }
 
@@ -441,12 +437,12 @@ text-align: right;
         display: flex;
         flex-direction: row;
        flex-wrap: nowrap;
-        width: 474px;
+        // width: 474px;
         font-size: 58px;
         font-weight: 400;
         line-height: 66px;
         letter-spacing: 0.06em;
-        min-width: 470px;
+       
 
 
     }
@@ -455,7 +451,6 @@ text-align: right;
 //prawy kontener - social media + kontakt//
 
   .footer-infotel{
-        margin-right: 20px;
         align-items: flex-end;
         font-size: 16px;
         line-height: 30px;
