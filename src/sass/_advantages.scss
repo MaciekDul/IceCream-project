@@ -15,27 +15,23 @@
     width: 100%;
   }
 }
-
 .advantages {
   @media screen and (min-width: 1200px) {
     padding-top: 37px;
     width: 100%;
   }
 }
-
 @media screen and (max-width: 767px) {
   .container-advantages {
     padding-left: 20px;
     padding-right: 20px;
   }
 }
-
 @media screen and (min-width: 480px) {
   .container-advantages {
     width: 480px;
   }
 }
-
 @media screen and (min-width: 768px) {
   .container-advantages {
     width: 768px;
@@ -43,7 +39,6 @@
     padding-right: 34px;
   }
 }
-
 @media screen and (min-width: 1200px) {
   .container-advantages {
     width: 1200px;
@@ -52,88 +47,70 @@
 .advantages-icon {
   margin-bottom: 16px;
 }
-
 .advantages-list-item-number {
   margin-bottom: 15px;
-
   font-family: Titan One;
   font-weight: 400;
   font-size: 36px;
   line-height: 1.139;
   letter-spacing: 0.04em;
   text-transform: uppercase;
-
   color: var(--red-color);
 }
-
 .advantages-list-item-text {
   font-weight: 700;
   font-size: 12px;
   line-height: 1.7;
-
   color: var(--text-color);
 }
-
 .advantages-list {
   @media screen and (min-width: 480px) and (max-width: 1199px) {
     padding-right: 30px;
     padding-left: 30px;
   }
 }
-
 @media screen and (min-width: 768px) {
   .advantages-title {
     font-weight: 500;
     font-size: 14px;
     line-height: 1.76;
   }
-
   .advantages-list {
     display: flex;
   }
-
   .advantages-list-item:not(:last-child) {
     margin-right: 60px;
   }
-
   .advantages-icon {
     margin-bottom: 36px;
   }
-
   .advantages-list-item-number {
     font-size: 48px;
     line-height: 1.146;
   }
-
   .advantages-list-item-text {
     font-size: 14px;
     line-height: 1.74;
   }
 }
-
 @media screen and (min-width: 1200px) {
   .advantages-title {
     font-size: 16px;
     letter-spacing: 0.04em;
   }
-
   .advantages-list-item {
     width: calc((100% - 60px) / 3);
-
     &:not(:last-child) {
       margin-right: 30px;
     }
   }
-
   .advantages-icon {
     margin-bottom: 40px;
   }
-
   .advantages-list-item-number {
     font-size: 58px;
     line-height: 1.138;
   }
-
   .advantages-list-item-text {
     font-size: 16px;
     line-height: 1.76;
