@@ -1,0 +1,481 @@
+
+.footer-section{
+    display: flex;
+    flex-direction: column;
+    background: #FFF5F6;
+    margin: 0;
+}
+
+.footer-container{
+    display: flex;
+    flex-direction: column;
+    margin: 0;
+    max-width: 1280px;
+    // flex-wrap: wrap;
+
+}
+
+.footer-title{
+    font-family: Titan One;
+    font-weight: 400;
+    display: flex;
+    flex-direction: column;
+    // flex-wrap: wrap;
+    // margin: auto;
+    justify-content: flex-start;
+    align-items: flex-start;
+    margin-left: 20px;
+
+}
+
+.footer-title-small{
+    display: flex;
+    justify-content: flex-start;
+    font-size: 18px;
+    line-height: 21px;
+    text-transform: uppercase;
+    color: #FFA5BA;
+    // margin-top: 113px;
+    margin-bottom: 17px;
+    // flex-wrap: wrap;
+    text-align:left;
+    align-items: flex-start;
+
+}
+
+.footer-title-big{
+    display: flex;
+    justify-content: flex-start;
+    font-size: 34px;
+    line-height: 39px;
+    text-transform: uppercase;
+    color:  #D41443;
+    letter-spacing: 0.04em;
+    text-align:left;
+    align-items: flex-start;
+
+}
+
+
+// footer- social media//
+.footer-infotel{
+    display: flex;
+    flex-direction: column;
+    margin-right: 20px;
+    margin-bottom: 43px;
+}
+
+.footer-socialmedia{
+    display: flex;
+    justify-content: flex-end;
+    gap: 28px;
+    fill: white;
+    margin-top: 43px;
+
+}
+
+
+.footer-socialmedia__icon{
+    fill: white;
+    background-color:  #FEA5BB;
+    justify-content: space-between;
+    border-radius: 50%;
+
+
+}
+
+// footer- napis Feel free + nr telefonu - jedna linijka//
+
+.footer-contact{
+    display: flex;
+    justify-content: flex-end;
+    align-items: flex-end;
+    font-family: DM Sans;
+    font-size: 12px;
+    font-weight: 500;
+    line-height: 22px;
+    letter-spacing: 0em;
+    text-align: right;
+    margin-top: 46px;
+
+}
+
+.footer-contact__link{
+color:#D41443;
+text-align: right;
+}
+
+.footer-contact__text{
+color: var(--black);
+text-align: right;
+
+}
+.footer-end{
+    display: flex;
+    flex-wrap: wrap;
+    height: 89px;
+    border-top: 1px solid #E1E1E1;
+    margin: 0;
+    bottom: 0;
+    width: 100%;
+    padding-top: 22px;
+    justify-content: center;
+    align-items: center;
+    font-family: 'DM Sans';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 21px;
+    text-align: center;
+}
+
+
+@media screen and (min-width: 720px){
+    .footer-container{
+        display: flex;
+        flex-direction: column;
+    }
+    .footer-title-small,
+    .footer-socialmedia,
+    .footer-title{
+        margin: 0;
+    }
+
+.footer-title{
+    margin-left: 20px;
+
+
+}
+
+.footer-title-small{
+    font-size: 26px;
+
+    font-weight: 500;
+}
+.footer-infotel{
+    margin-right: 20px;
+}
+
+
+
+}
+.footer-section{
+    display: flex;
+    background: #FFF5F6;
+    margin: 0;
+}
+
+.footer-container{
+    display: flex;
+    flex-direction: column;
+    margin: 0;
+    max-width: 1280px;
+
+    // flex-wrap: wrap;
+
+}
+
+.footer-title{
+    font-family: Titan One;
+    font-weight: 400;
+    display: flex;
+    flex-direction: column;
+    // flex-wrap: wrap;
+    // margin: auto;
+    justify-content: flex-start;
+    align-items: flex-start;
+    margin-left: 20px;
+    width: 234px;
+
+
+}
+
+.footer-title-small{
+    display: flex;
+    justify-content: flex-start;
+    font-size: 18px;
+    line-height: 21px;
+    text-transform: uppercase;
+    color: #FFA5BA;
+    margin-top: 113px;
+    margin-bottom: 17px;
+    // flex-wrap: wrap;
+    text-align:left;
+    align-items: flex-start;
+
+}
+
+.footer-title-big{
+    display: flex;
+    justify-content: flex-start;
+    font-size: 34px;
+    line-height: 39px;
+    text-transform: uppercase;
+    color:  #D41443;
+    letter-spacing: 0.04em;
+    text-align:left;
+    align-items: flex-start;
+
+}
+
+
+// footer- social media//
+.footer-infotel{
+    display: flex;
+    flex-direction: column;
+    margin-right: 20px;
+    margin-bottom: 43px;
+}
+
+.footer-socialmedia{
+    display: flex;
+    justify-content: flex-end;
+    gap: 28px;
+    fill: white;
+    margin-top: 43px;
+
+}
+
+.footer-socialmedia__link{
+    display: flex;
+    border-radius: 50%;
+    fill: white;
+    justify-content: center;
+
+    &:hover,
+    &:focus{
+        background-color: #D41443;
+    }
+
+}
+.footer-socialmedia__icon{
+    fill: white;
+    background-color:  #FEA5BB;
+    justify-content: space-between;
+    border-radius: 50%;
+
+
+    &:hover,
+    &:focus{
+        background-color: #D41443;
+    }
+
+}
+
+// footer- napis Feel free + nr telefonu - jedna linijka//
+
+.footer-contact{
+    display: flex;
+    justify-content: flex-end;
+    align-items: flex-end;
+    font-family: DM Sans;
+    font-size: 12px;
+    font-weight: 700;
+    line-height: 22px;
+    letter-spacing: 0em;
+    text-align: right;
+    margin-top: 46px;
+
+}
+
+.footer-contact__link{
+color:#D41443;
+text-align: right;
+}
+
+.footer-contact__text{
+color: var(--black);
+text-align: right;
+
+
+}
+.footer-end{
+    display: flex;
+    flex-wrap: wrap;
+    height: 89px;
+    border-top: 1px solid #E1E1E1;
+    margin: 0;
+    bottom: 0;
+    width: 100%;
+    height: 89px;
+    margin-bottom: 25px;
+
+
+}
+.footer-end__text{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: 'DM Sans';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 21px;
+    text-align: center;
+    width: 150px;
+    color: #907E82;
+    padding-top: 22px;
+}
+
+@media screen and (min-width: 768px){
+    .footer-container{
+        display: flex;
+        margin: 0;
+        padding: 0;
+        flex-direction: column;
+    }
+    .footer-title-small, .footer-title-big,.footer-socialmedia__link,
+    .footer-socialmedia,
+    .footer-title,
+    .footer-infotel{
+        margin: 0;
+    }
+
+    .footer-title{
+        margin-left: 20px;
+        display: flex;
+        margin-top: 165px;
+        margin-bottom: 91px;
+    }
+
+    .footer-title-small{
+        font-size: 26px;
+        font-weight: 400;
+        line-height: 30px;
+        letter-spacing: 0.04em;
+        margin-bottom: 16px;
+        min-width: 340px;
+
+
+    }
+
+
+    .footer-contact{
+        font-size: 14px;
+        font-weight: 700;
+        color: #000000;
+    }
+
+    .footer-end{
+        display: flex;
+        flex-wrap: nowrap;
+
+    }
+
+    .footer-end__text{
+        width: 100vw;
+        display: flex;
+        min-width: 276px;
+        font-size: 14px;
+        letter-spacing: 0.02em;
+
+    }
+}
+
+@media screen and (min-width: 1280px){
+
+    .footer-section{
+        display: flex;
+        margin: 0;
+        justify-content: center;
+        align-items: center;
+
+    }
+
+    .footer-container{
+        display: flex;
+        justify-content: center;
+        margin: 0;
+
+    }
+    .footer-title-small, .footer-title-big,.footer-socialmedia__link,
+    .footer-socialmedia,
+    .footer-title,
+    .footer-infotel{
+        margin: 0;
+    }
+//gorna czesc- nad kreska 2019//
+    .footer-top{
+        display: flex;
+        flex-direction: row;
+        margin: auto;
+        justify-content: space-between;
+        align-items: center;
+        margin-top: 165px;
+        max-width: 1045px;
+        margin-bottom: 97px;
+    }
+
+    //lewy kontener z tytulami//
+       .footer-title{
+        margin-left: 20px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        width: 472px;
+
+    }
+
+
+    .footer-title-small{
+        display: flex;
+        flex-direction: row;
+        flex-wrap: nowrap;
+        width: 472px;
+        font-size: 30px;
+        font-weight: 400;
+        letter-spacing: 0.04em;
+        line-height: 34px;
+        min-width: 470px;
+
+    }
+
+     .footer-title-big{
+        display: flex;
+        flex-direction: row;
+       flex-wrap: nowrap;
+        width: 474px;
+        font-size: 58px;
+        font-weight: 400;
+        line-height: 66px;
+        letter-spacing: 0.06em;
+        min-width: 470px;
+
+
+    }
+
+
+//prawy kontener - social media + kontakt//
+
+  .footer-infotel{
+        margin-right: 20px;
+        align-items: flex-end;
+        font-size: 16px;
+        line-height: 30px;
+        letter-spacing: 0.02em;
+        font-weight: 700;
+   }
+
+   .footer-contact{
+       font-size: 16px;
+        line-height: 30px;
+        letter-spacing: 0.02em;
+        font-weight: 700;
+   }
+
+
+   .footer-end{
+    height: 45px;
+
+   }
+
+    .footer-end__text{
+        display: flex;
+        min-width: 276px;
+        font-size: 14px;
+        letter-spacing: 0.02em;
+
+    }
+}
+
+

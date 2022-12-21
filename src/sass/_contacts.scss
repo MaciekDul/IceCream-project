@@ -1,0 +1,153 @@
+.contacts {
+  margin-top: 86px;
+  padding-bottom: 113px;
+  &__hidden {
+    visibility: hidden;
+  }
+  &__container {
+    width: 100vw;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-weight: 500;
+    font-size: 12px;
+    line-height: 1.5;
+
+    margin-top: 86px;
+    margin-bottom: 32px;
+  }
+
+  &__form {
+    width: 220px;
+    box-shadow: 0px 8px 30px rgba(212, 20, 67, 0.1);
+    border-radius: 24px;
+    padding: 43px 20px 43px 20px;
+    margin-bottom: 20px;
+    background-color: var(--white-color);
+  }
+  &__form > &__fieldset {
+    border-bottom: 1px solid var(--gray-color);
+    width: 90%;
+    padding-bottom: 25px;
+  }
+  &__form > &__fieldset:last-child {
+    border-bottom: none;
+    padding-bottom: 0px;
+  }
+  &__fieldset {
+    border-style: none;
+    padding-top: 25px;
+    width: 100%;
+  }
+
+  &__label {
+    line-height: 1.86;
+    width: 100vw;
+    color: var(--text-color);
+  }
+  &__block {
+    padding: 2px 15px 2px 15px;
+    margin-left: 9px;
+    width: min-content;
+    white-space: nowrap;
+    border-radius: 4px;
+    color: var(--white-color);
+    text-align: center;
+    align-content: center;
+  }
+  &__cafe {
+    background-color: var(--orange-color);
+  }
+  &__food-truck {
+    background-color: var(--green-color);
+  }
+  &__opening-hours {
+    color: var(--text);
+    line-height: 1.86;
+    margin-bottom: 10px;
+    margin-top: 3px;
+  }
+  &__locations-btn {
+    background-color: var(--red-color);
+    border-radius: 22px;
+    color: var(--white-color);
+    margin-bottom: 10px;
+    border-style: none;
+    width: 160px;
+    height: 44px;
+    font-weight: 700;
+    line-height: 1.3;
+  }
+  &__franchise-btn {
+    border-style: none;
+    white-space: nowrap;
+    color: var(--red-color);
+    border-radius: 22px;
+    width: 160px;
+    height: 44px;
+    font-weight: 700;
+    line-height: 1.3;
+  }
+  &__btn {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+}
+@media (min-width: 768px) {
+  .contacts {
+    margin-top: 125px;
+    padding-bottom: 165px;
+    &__container {
+      display: flex;
+      flex-direction: row;
+      justify-content: space-around;
+      width: 768px;
+      margin: auto;
+    }
+    &__btn {
+      flex-direction: row;
+      justify-content: space-between;
+      text-align: center;
+      width: 380px;
+      margin: auto;
+    }
+    &__locations-btn {
+      margin-bottom: 0;
+      width: 191px;
+    }
+    &__franchise-btn {
+      width: 174px;
+    }
+  }
+}
+@media (min-width: 1200px) {
+  .contacts {
+    &__container {
+      width: 1200px;
+      margin: auto;
+    }
+    &__form {
+      width: 330px;
+      height: 572px;
+      font-size: 16px;
+      margin-bottom: 32px;
+    }
+    &__block {
+      margin-bottom: 32px;
+    }
+    &__opening-overs {
+      margin-bottom: 15px;
+    }
+    &__btn {
+      width: 393px;
+    }
+    &__locations-btn {
+      margin-bottom: 0;
+      width: 198px;
+    }
+    &__franchise-btn {
+      width: 180px;
+    }
+  }
+}
