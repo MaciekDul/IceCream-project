@@ -1,49 +1,49 @@
 <!-- start header , logo , button mobile and navigation links-->
 <header class="header">
-    <div class="container">
-        <a href="#" class="header__logo link">
-            <img src="./images/logo.png" width="199px" height="50" alt="logo ice cream" />
-        </a>
-        <nav class="nav">
-            <ul class="list nav__list">
-                <li class="nav__item">
-                    <a href="" class="current link nav__link">Home</a>
-                </li>
+  <div class="container">
+    <a href="#" class="header__logo link">
+      <img src="./images/logo.png" width="199px" height="50" alt="logo ice cream" />
+    </a>
+    <nav class="nav">
+      <ul class="list nav__list">
+        <li class="nav__item">
+          <a href="" class="current link nav__link">Home</a>
+        </li>
 
-                <!-- konieczne dodanie kotwic do sekcji zgodnie z instrukcją "Menu jest zaimplementowane za pomocą linków kotwiczących, które prowadzą do odpowiednich sekcji układu.
+        <!-- konieczne dodanie kotwic do sekcji zgodnie z instrukcją "Menu jest zaimplementowane za pomocą linków kotwiczących, które prowadzą do odpowiednich sekcji układu.
 "-->
-                <li class="nav__item">
-                    <a href="#advantages" class="nav__link">About us</a>
-                </li>
-                <li class="nav__item">
-                    <a href="#about" class="nav__link">How it’s made?</a>
-                </li>
-                <li class="nav__item">
-                    <a href="#products" class="nav__link">Our products</a>
-                </li>
-                <li class="nav__item">
-                    <a href="#contacts" class="nav__link">Contact</a>
-                </li>
-            </ul>
-            <div class="header__wrap">
-                <button
+        <li class="nav__item">
+          <a href="#advantages" class="nav__link">About us</a>
+        </li>
+        <li class="nav__item">
+          <a href="#about" class="nav__link">How it’s made?</a>
+        </li>
+        <li class="nav__item">
+          <a href="#products" class="nav__link">Our products</a>
+        </li>
+        <li class="nav__item">
+          <a href="#contacts" class="nav__link">Contact</a>
+        </li>
+      </ul>
+      <div class="header__wrap">
+        <button
           class="menu-toggle js-open-menu menu-open-btn"
           aria-expanded="false"
           aria-controls="mobile-menu"
         >
-                    <svg class="menu-icon" width="20" height="20">
-                        <use href="./images/sprite.svg#icon-burger"></use>
-                    </svg>
-                </button>
-                <button type="button" class="nav__btn" data-modal-open="">
-                    Buy now
-                    <svg class="nav__icon" width="10" height="10">
-                        <use href="./images/sprite.svg#icon-arrow-right"></use>
-                    </svg>
-                </button>
-            </div>
-        </nav>
-    </div>
+          <svg class="menu-icon" width="20" height="20">
+            <use href="./images/sprite.svg#icon-burger"></use>
+          </svg>
+        </button>
+        <button type="button" class="nav__btn" data-modal-open>
+          Buy now
+          <svg class="nav__icon" width="10" height="10">
+            <use href="./images/sprite.svg#icon-arrow-right"></use>
+          </svg>
+        </button>
+      </div>
+    </nav>
+  </div>
 
 
     <section class="section hero">
@@ -174,48 +174,39 @@
             <button class="contacts__locations-btn">Products</button>
           </li>
           <li class="hero-list__item button">
-            <button class="hero-list__link hero-list__link--right hero__button"
-            >How it&#8242;s made&#63;</button
-            >
+            <button class="hero-list__link hero-list__link--right hero__button">
+              How it&#8242;s made&#63;
+            </button>
           </li>
         </ul>
       </div>
       <div class="hero__circle">
-      <picture>
-        <source
-          srcset="
-          ./images/hero/pc/ice.png 1x,
-          ./images/hero/tablet/ice@2x.png 2x
-        "
-          media="(min-width:1200px)"
-          type="image/png"
-        />
-        <source
-          srcset="
-          ./images/hero/pc/ice.png 1x,
-          ./images/hero/tablet/ice@2x.png 2x
-        "
-          media="(min-width:768px)"
-          type="image/png"
-        />
-        <source
-          srcset="
+        <picture>
+          <source
+            srcset="./images/hero/pc/ice.png 1x, ./images/hero/tablet/ice@2x.png 2x"
+            media="(min-width:1200px)"
+            type="image/png"
+          />
+          <source
+            srcset="./images/hero/pc/ice.png 1x, ./images/hero/tablet/ice@2x.png 2x"
+            media="(min-width:768px)"
+            type="image/png"
+          />
+          <source
+            srcset="
           ./images/hero/mobile/slider-ice.png 1x,
           ./images/hero/mobile/slider-ice@2x.png 2x
            ./images/hero/mobile/slider-ice@3x.png 3x
         "
-          media="(min-width:480px)"
-          type="image/png"
-        />
-        <img class="hero__pic" src="./images/hero/pc/ice.png" alt="człowiek" />
-      </picture>
+            media="(min-width:480px)"
+            type="image/png"
+          />
+          <img class="hero__pic" src="./images/hero/pc/ice.png" alt="człowiek" />
+        </picture>
       </div>
       <picture>
         <source
-          srcset="
-          ./images/hero/pc/milk.png 1x,
-          ./images/hero/tablet/milk@2x.png 2x
-        "
+          srcset="./images/hero/pc/milk.png 1x, ./images/hero/tablet/milk@2x.png 2x"
           media="(min-width:1200px)"
           type="image/png"
         />
@@ -228,15 +219,16 @@
       </picture>
       <picture>
         <source
-          srcset="
-          ./images/hero/pc/girl-ice.png 1x,
-          ./images/hero/tablet/girl-ice@2x.png 2x
-        "
+          srcset="./images/hero/pc/girl-ice.png 1x, ./images/hero/tablet/girl-ice@2x.png 2x"
           media="(min-width:1200px)"
           type="image/png"
         />
         <source
-          srcset="./images/hero/pc/girl-ice.png 1x, ./images/hero/tablet/girl-ice@2x.png 2x, ./images/hero/tablet/girl-ice@3x.png 3x"
+          srcset="
+            ./images/hero/pc/girl-ice.png        1x,
+            ./images/hero/tablet/girl-ice@2x.png 2x,
+            ./images/hero/tablet/girl-ice@3x.png 3x
+          "
           media="(min-width:768px)"
           type="image/png"
         />
@@ -244,28 +236,26 @@
       </picture>
       <div class="hero__information">
         <p>
-          Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut
-          labore et
+          Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt
+          ut labore et
         </p>
         <button type="button" class="hero__bttn" aria-label="Read More">
-          <img alt="arrow" src="./images/hero/arrow.png"/>
+          <img alt="arrow" src="./images/hero/arrow.png" />
         </button>
       </div>
       <ul class="presentation-list">
         <li class="presentation-list__item">
-        <span class="presentation-list__text">
-          <span class="presentation-list__numbers">16</span>
-          cafes
-        </span>
+          <span class="presentation-list__text">
+            <span class="presentation-list__numbers">16</span>
+            cafes
+          </span>
           <div class="presentation-list__circle"></div>
         </li>
         <li class="presentation-list__item">
-        <span class="presentation-list__text">
-          <span class="presentation-list__numbers">23</span>
-          <div>
-            food trucks
-          </div>
-        </span>
+          <span class="presentation-list__text">
+            <span class="presentation-list__numbers">23</span>
+            <div>food trucks</div>
+          </span>
           <div class="presentation-list__circle"></div>
         </li>
       </ul>
@@ -273,8 +263,9 @@
   </section>
 
 
+
+
+
 </header>
 
-
 <!-- end of header , logo , button mobile and navigation links-->
-

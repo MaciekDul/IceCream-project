@@ -8,13 +8,13 @@
   box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.04), 0px 2px 4px rgba(0, 0, 0, 0.08),
     0px 1px 3px rgba(0, 0, 0, 0.16);
 
-  transform: translateX(150%);
+  transform: translateX(101vw);
   transition: transform 250ms ease-in-out;
   z-index: 5;
 }
 
 .mobile__menu-container.is-open {
-  transform: translateX(28%);
+  transform: translateX(calc(101vw - 250px));
 }
 
 .mobile__button {
@@ -87,11 +87,11 @@
   .mobile__menu-container {
     width: 254px;
     height: 1020px;
-    transform: translateX(305%);
+    transform: translateX(101vw);
   }
 
   .mobile__menu-container.is-open {
-    transform: translateX(205%);
+    transform: translateX(calc(101vw - 254px));
   }
 
   .nav__btn-mobile {
