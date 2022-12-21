@@ -11,7 +11,7 @@
 .slider-wrapper__personal {
     width: 280px;
     margin-top: 20px;
-    padding: 43px 57px 20px 57px;  
+    padding: 43px 55px 20px 55px;  
     @media screen and (min-width: 480px){
         width: 400px;
 }
@@ -54,19 +54,19 @@
     line-height: 255%;
     background: linear-gradient(to top, 
     #E1E1E1 0% 1%,
-    #FAFAFA 1% 12%,
+    #FFFFFF 1% 12%,
     #E1E1E1 12% 13%,
-    #FAFAFA 13% 25%,
+    #FFFFFF 13% 25%,
     #E1E1E1 25% 26%,
-    #FAFAFA 26% 37%,
+    #FFFFFF 26% 37%,
     #E1E1E1 37% 38%,
-    #FAFAFA 38% 50%,
+    #FFFFFF 38% 50%,
     #E1E1E1 50% 51%,
-    #FAFAFA 51% 62%,
+    #FFFFFF 51% 62%,
     #E1E1E1 62% 63%,
-    #FAFAFA 63% 75%,
+    #FFFFFF 63% 75%,
     #E1E1E1 75% 76%,
-    #FAFAFA 76% 87%,
+    #FFFFFF 76% 87%,
     #E1E1E1 87% 88%,
     #FFFFFF 88%);
   background-position:bottom;
@@ -74,30 +74,30 @@
 @media screen and (min-width: 480px) {
     background: linear-gradient(to top, 
     #E1E1E1 0% 1%,
-    #FAFAFA 1% 25%,
+    #FFFFFF 1% 25%,
     #E1E1E1 25% 26%,
-    #FAFAFA 26% 50%,
+    #FFFFFF 26% 50%,
     #E1E1E1 50% 51%,
-    #FAFAFA 51% 75%,
+    #FFFFFF 51% 75%,
     #E1E1E1 75% 76%,
-    #FAFAFA 76% );
+    #FFFFFF 76% );
 }
 @media screen and (min-width: 768px) {
     background: linear-gradient(to top, 
     #E1E1E1 0% 1%,
-    #FAFAFA 1% 35%,
+    #FFFFFF 1% 35%,
     #E1E1E1 35% 36%,
-    #FAFAFA 36% 70%,
+    #FFFFFF 36% 70%,
     #E1E1E1 70% 71%,
-    #FAFAFA 71% );
+    #FFFFFF 71% );
     font-size: 14px;
 }
 @media screen and (min-width: 1280px) {
     background: linear-gradient(to top, 
     #E1E1E1 0% 1%,
-    #FAFAFA 1% 50%,
+    #FFFFFF 1% 50%,
     #E1E1E1 50% 51%,
-    #FAFAFA 51% );
+    #FFFFFF 51% );
     font-size: 16px;
 }
 }
@@ -118,7 +118,10 @@
 .slider-wrapper__slider-menu {
     display: flex;
     align-items: center;
+    margin: 0 auto;
     margin-top: 30px;
     margin-bottom:  86px;
+    justify-content: center;
+    
 }
   
