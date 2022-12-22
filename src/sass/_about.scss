@@ -1,14 +1,19 @@
+
 .about{
-    padding-inline:20px;
+    padding-right:20px;
+    padding-left:20px;
     padding-top:125px;
-    width:100%;
     background-color:var(--background-pink-color);
-    display:flex;
-    flex-direction: column;
-    
-
-
-&__subtitle{    
+    background-image: url("./images/making/milk.png");
+    background-position: 0px 643px;
+    background-repeat:no-repeat;
+    @media (min-device-pixel-ratio: 2),
+    (-webkit-min-device-ratio: 2),
+    (min-resolution: 192dpi),
+    (min-resolution: 2dppx){
+    background-image: url("./images/making/milk@2x.png");
+    }
+&__subtitle{
 font-family: 'Titan One';
 font-weight: 400;
 font-size: 18px;
@@ -17,9 +22,7 @@ text-align: center;
 text-transform: uppercase;
 color: var(--text);
 margin-bottom:15px;
-
 }
-
 &__title{
 font-family: 'Titan One';
 font-weight: 400;
@@ -33,10 +36,13 @@ margin-left:39px;
 margin-right: 41px;
 margin-bottom: 26px;
 }
-
+&__section{
+    display:flex;
+    flex-direction: column;
+}
 &__images{
-    width:calc(100vw - 40px);
     margin-bottom: 46px;
+    width:calc(100vw - 40px);
 }
 &__description{
 font-family: 'DM Sans';
@@ -45,7 +51,7 @@ font-weight: 500;
 font-size: 12px;
 line-height: 1.58;
 color:var(--text-color);
-display:block;
+display:flex;
 margin-inline: 30px;
 margin-bottom: 47px;
 letter-spacing: 0.04em;
@@ -59,12 +65,11 @@ line-height: 1.58;
 color: var(--secondary-text-color);
 display: flex;
 flex-direction: column;
-gap:17px;
+gap:10px;
 margin-inline:30px;
 margin-bottom: 17px;
 letter-spacing: 0.04em;
 }
-
 &__button{
 background-color: #FFFFFF;
 border-radius: 22px;
@@ -85,112 +90,103 @@ margin-right: 74px;
 padding-block: 15px;
 box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
   transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
-
     &:focus,
     &:hover {
       background: #ECEBEB;
     }
 }
-
 &__icon{
     fill: var(--red-color);
     width:10px;
     height:10px;
-    
 }}
-
-@media screen and ( min-widith: 768px ){
+@media screen and (min-width: 768px ){
   .about{
     padding-left:39px;
     padding-right:36px;
     padding-top:130px;
-   
-   &__subtitle{    
+    background-image: none;
+   &__subtitle{
   font-size: 26px;
   line-height: 1.15;
   margin-bottom:16px;
   }
-
   &__title{
 font-size: 48px;
 margin-left:172px;
 margin-right: 171px;
 margin-bottom: 50px;
 }
-
 &__section{
   display:flex;
   flex-direction: row;
   flex-wrap: wrap;
-  width:calc( ( 100vw - 92px ) / 2);
+  width:calc( ( 100% - 92px ) / 2);
   gap:17px;
-}
-
-&__tablet{
-  display:flex;
-  flex-direction: column;
+  height: 500px;
 }
 &__images{
-    margin-bottom: 56px;
+    margin-bottom: 0px;
+}
+&__content{
+    display:flex;
+    flex-direction: column;
 }
 &__description{
 font-size: 14px;
 line-height: 1.79;
 margin-bottom: 40px;
+margin-inline: 0px;
+text-align: left;
 }
 &__depiction{
 font-size: 14px;
 line-height: 1.79;
 margin-inline:0px;
-margin-bottom: 62px;
+margin-bottom: 0px;
+text-align: left;
 }
-
 &__button{
 border-radius: 22px;
 margin-bottom: 66px;
 font-size: 16px;
 line-height: 1.3;
-margin-left:357px;
-margin-right:164px;
 width:176px;
 }
   }
 }
-
 @media screen and (min-width:1200px) {
   .about{
     padding-left: 112px;
     padding-right: 117px;
     padding-top:125px;
-
+    background-image: url("./images/making/milk-desk.png");
+    background-position: 0px 230px;
+    background-repeat:no-repeat;
+    @media (min-device-pixel-ratio: 2),
+    (-webkit-min-device-ratio: 2),
+    (min-resolution: 192dpi),
+    (min-resolution: 2dppx){
+    background-image: url("./images/making/milk-desk@2x.png");
+    }
+    &__section{
+  display:flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  width:calc(( 100vw / 2) - 303px);
+  gap:74px;
+}
     &__subtitle{
       font-size: 30px;
       line-height: 1.13;
       letter-spacing: 0.04em;
       margin-bottom: 15px;
     }
-
     &__title{
     font-size: 58px;
     line-height: 1.14;
     letter-spacing: 0.06em;
     margin-bottom: 102px;
     }
-   &__desktop{
-    display: flex;
-    flex-direction: column;
-    
-   }
-   &__images{
-    margin-bottom: 39px;
-    margin-right: 74px;
 }
-&__description{
-margin-bottom: 35px;
-  }
-  &__depiction{
-margin-bottom: 45px;
-}
-
-} 
 }
