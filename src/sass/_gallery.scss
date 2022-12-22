@@ -1,14 +1,26 @@
+
+.gallery {
+    display: flex;
+    background-color: #FFF5F6;
+    height: 187px; 
+    padding-top:139px;
+    @media screen and (min-width: 768px) {
+        height: 245px; 
+    }
+    @media screen and (min-width: 1280px) {
+        height: 307px; 
+    }
+}
 .gallery__pictures-reviews {
     display: flex;
     align-items: center;
     margin: auto;
-    width: 100%;
+    width: auto;
         height: 122px;
         background-size: cover;
         background-position: center;
         background-repeat: no-repeat;
         justify-content: center;
-
 @media screen and (min-width: 768px) {
     height: 264px;
 }
